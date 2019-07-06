@@ -15,6 +15,31 @@ Route::get('/', function () {
     return view('index');
 });
 
-Auth::routes();
+Route::get('contact', function () {
+    return view('contact');
+});
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('about', function () {
+    return view('about');
+});
+
+Route::get('archive', function () {
+    return view('archive');
+});
+
+Route::get('singel', function () {
+    return view('singel_post');
+});
+
+Route::get('video', function () {
+    return view('video_post');
+});
+
+Route::get('submit', function () {
+    return view('submit');
+});
+
+Route::get('login', function () {
+    return view('login');
+});
+

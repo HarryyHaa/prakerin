@@ -38,7 +38,7 @@
                 <nav class="classy-navbar justify-content-between" id="magNav">
 
                     <!-- Nav brand -->
-                    <a href="index.html" class="nav-brand"><img src="{{ asset('assets/frontend/img/core-img/logo.png')}}" alt=""></a>
+                    <a href="/" class="nav-brand"><img src="{{ asset('assets/frontend/img/core-img/logo.png')}}"></a>
 
                     <!-- Navbar Toggler -->
                     <div class="classy-navbar-toggler">
@@ -57,62 +57,62 @@
                             <!-- Nav Start -->
                             <div class="classynav">
                                 <ul>
-                                    <li class="active"><a href="index.html">Home</a></li>
-                                    <li><a href="archive.html">Archive</a></li>
+                                    <li class="active"><a href="/">Home</a></li>
+                                    <li><a href="archive">Archive</a></li>
                                     <li><a href="#">Pages</a>
                                         <ul class="dropdown">
-                                            <li><a href="index.html">Home</a></li>
-                                            <li><a href="archive.html">Archive</a></li>
-                                            <li><a href="video-post.html">Single Video Post</a></li>
-                                            <li><a href="single-post.html">Single Post</a></li>
-                                            <li><a href="about.html">About Us</a></li>
-                                            <li><a href="contact.html">Contact</a></li>
-                                            <li><a href="submit-video.html">Submit Video</a></li>
-                                            <li><a href="login.html">Login</a></li>
+                                            <li><a href="/">Home</a></li>
+                                            <li><a href="/archive">Archive</a></li>
+                                            <li><a href="/video_post">Single Video Post</a></li>
+                                            <li><a href="/single_post">Single Post</a></li>
+                                            <li><a href="/about">About Us</a></li>
+                                            <li><a href="/contact">Contact</a></li>
+                                            <li><a href="/submit">Submit Video</a></li>
+                                            <li><a href="/login">Login</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="#">Mega</a>
                                         <div class="megamenu">
                                             <ul class="single-mega cn-col-4">
-                                                <li><a href="index.html">Home</a></li>
-                                                <li><a href="archive.html">Archive</a></li>
-                                                <li><a href="video-post.html">Single Video Post</a></li>
-                                                <li><a href="single-post.html">Single Post</a></li>
-                                                <li><a href="about.html">About Us</a></li>
-                                                <li><a href="contact.html">Contact</a></li>
-                                                <li><a href="login.html">Login</a></li>
+                                                <li><a href="/">Home</a></li>
+                                                <li><a href="/archive">Archive</a></li>
+                                                <li><a href="/video_post">Single Video Post</a></li>
+                                                <li><a href="/single_post">Single Post</a></li>
+                                                <li><a href="/about">About Us</a></li>
+                                                <li><a href="/contact">Contact</a></li>
+                                                <li><a href="/login">Login</a></li>
                                             </ul>
                                             <ul class="single-mega cn-col-4">
-                                                <li><a href="index.html">Home</a></li>
-                                                <li><a href="archive.html">Archive</a></li>
-                                                <li><a href="video-post.html">Single Video Post</a></li>
-                                                <li><a href="single-post.html">Single Post</a></li>
-                                                <li><a href="about.html">About Us</a></li>
-                                                <li><a href="contact.html">Contact</a></li>
-                                                <li><a href="login.html">Login</a></li>
+                                                <li><a href="/">Home</a></li>
+                                                <li><a href="/archive">Archive</a></li>
+                                                <li><a href="/video_post">Single Video Post</a></li>
+                                                <li><a href="/single_post">Single Post</a></li>
+                                                <li><a href="/about">About Us</a></li>
+                                                <li><a href="/contact">Contact</a></li>
+                                                <li><a href="/login">Login</a></li>
                                             </ul>
                                             <ul class="single-mega cn-col-4">
-                                                <li><a href="index.html">Home</a></li>
-                                                <li><a href="archive.html">Archive</a></li>
-                                                <li><a href="video-post.html">Single Video Post</a></li>
-                                                <li><a href="single-post.html">Single Post</a></li>
-                                                <li><a href="about.html">About Us</a></li>
-                                                <li><a href="contact.html">Contact</a></li>
-                                                <li><a href="login.html">Login</a></li>
+                                                <li><a href="/">Home</a></li>
+                                                <li><a href="/archive">Archive</a></li>
+                                                <li><a href="video-post">Single Video Post</a></li>
+                                                <li><a href="/single_post">Single Post</a></li>
+                                                <li><a href="about">About Us</a></li>
+                                                <li><a href="/contact">Contact</a></li>
+                                                <li><a href="login">Login</a></li>
                                             </ul>
                                             <ul class="single-mega cn-col-4">
-                                                <li><a href="index.html">Home</a></li>
-                                                <li><a href="archive.html">Archive</a></li>
-                                                <li><a href="video-post.html">Single Video Post</a></li>
-                                                <li><a href="single-post.html">Single Post</a></li>
-                                                <li><a href="about.html">About Us</a></li>
-                                                <li><a href="contact.html">Contact</a></li>
-                                                <li><a href="login.html">Login</a></li>
+                                                <li><a href="/">Home</a></li>
+                                                <li><a href="/archive">Archive</a></li>
+                                                <li><a href="/video_post">Single Video Post</a></li>
+                                                <li><a href="/single_post">Single Post</a></li>
+                                                <li><a href="/about">About Us</a></li>
+                                                <li><a href="/contact">Contact</a></li>
+                                                <li><a href="/login">Login</a></li>
                                             </ul>
                                         </div>
                                     </li>
-                                    <li><a href="about.html">About</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="/about">About</a></li>
+                                    <li><a href="/contact">Contact</a></li>
                                 </ul>
                             </div>
                             <!-- Nav End -->
@@ -121,15 +121,15 @@
                         <div class="top-meta-data d-flex align-items-center">
                             <!-- Top Search Area -->
                             <div class="top-search-area">
-                                <form action="index.html" method="post">
+                                <form action="/" method="post">
                                     <input type="search" name="top-search" id="topSearch" placeholder="Search and hit enter...">
-                                    <button type="submit" class="btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                    <button type="/submit" class="btn"><i class="fa fa-search" aria-hidden="true"></i></button>
                                 </form>
                             </div>
                             <!-- Login -->
-                            <a href="login.html" class="login-btn"><i class="fa fa-user" aria-hidden="true"></i></a>
+                            <a href="/login" class="login-btn"><i class="fa fa-user" aria-hidden="true"></i></a>
                             <!-- Submit Video -->
-                            <a href="submit-video.html" class="submit-video"><span><i class="fa fa-cloud-upload"></i></span> <span class="video-text">Submit Video</span></a>
+                            <a href="/submit" class="submit"><span><i class="fa fa-cloud-upload"></i></span> <span class="video-text">Submit Video</span></a>
                         </div>
                     </div>
                 </nav>
@@ -141,18 +141,18 @@
     <!-- ##### Hero Area Start ##### -->
     <div class="hero-area owl-carousel">
         <!-- Single Blog Post -->
-        <div class="hero-blog-post bg-img bg-overlay" style="{{ asset('assets/frontend/background-image: url(img/bg-img/1.jpg')}}">
+        <div class="hero-blog-post bg-img bg-overlay" style="background-image: url('{{ asset('assets/frontend/img/bg-img/1.jpg') }}')">
             <div class="container h-100">
                 <div class="row h-100 align-items-center">
                     <div class="col-12">
                         <!-- Post Contetnt -->
                         <div class="post-content text-center">
                             <div class="post-meta" data-animation="fadeInUp" data-delay="100ms">
-                                <a href="#">MAY 8, 2018</a>
-                                <a href="archive.html">lifestyle</a>
+                                <a href="#">MAY 8, 2019</a>
+                                <a href="/archive">lifestyle</a>
                             </div>
-                            <a href="{{ asset('assets/frontend/video-post.html')}}" class="post-title" data-animation="fadeInUp" data-delay="300ms">Party Jokes Startling But Unnecessary</a>
-                            <a href="{{ asset('assets/frontendvideo-post.html')}}" class="video-play" data-animation="bounceIn" data-delay="500ms"><i class="fa fa-play"></i></a>
+                            <a href="/video_post" class="post-title" data-animation="fadeInUp" data-delay="300ms">Party Jokes Startling But Unnecessary</a>
+                            <a href="/video_post" class="video-play" data-animation="bounceIn" data-delay="500ms"><i class="fa fa-play"></i></a>
                         </div>
                     </div>
                 </div>
@@ -160,7 +160,7 @@
         </div>
 
         <!-- Single Blog Post -->
-        <div class="hero-blog-post bg-img bg-overlay" style="background-image: url(img/bg-img/2.jpg);">
+        <div class="hero-blog-post bg-img bg-overlay" style="background-image: url('{{ asset('assets/frontend/img/bg-img/2.jpg')}}')">
             <div class="container h-100">
                 <div class="row h-100 align-items-center">
                     <div class="col-12">
@@ -168,10 +168,10 @@
                         <div class="post-content text-center">
                             <div class="post-meta" data-animation="fadeInUp" data-delay="100ms">
                                 <a href="#">MAY 8, 2018</a>
-                                <a href="archive.html">lifestyle</a>
+                                <a href="/archive">lifestyle</a>
                             </div>
-                            <a href="video-post.html" class="post-title" data-animation="fadeInUp" data-delay="300ms">Party Jokes Startling But Unnecessary</a>
-                            <a href="video-post.html" class="video-play" data-animation="bounceIn" data-delay="500ms"><i class="fa fa-play"></i></a>
+                            <a href="/video_post" class="post-title" data-animation="fadeInUp" data-delay="300ms">Party Jokes Startling But Unnecessary</a>
+                            <a href="/video_post" class="video-play" data-animation="bounceIn" data-delay="500ms"><i class="fa fa-play"></i></a>
                         </div>
                     </div>
                 </div>
@@ -179,7 +179,7 @@
         </div>
 
         <!-- Single Blog Post -->
-        <div class="hero-blog-post bg-img bg-overlay" style="background-image: url(img/bg-img/3.jpg);">
+        <div class="hero-blog-post bg-img bg-overlay" style="background-image: url('{{ asset('assets/frontend/img/bg-img/3.jpg')}}')">
             <div class="container h-100">
                 <div class="row h-100 align-items-center">
                     <div class="col-12">
@@ -187,10 +187,10 @@
                         <div class="post-content text-center">
                             <div class="post-meta" data-animation="fadeInUp" data-delay="100ms">
                                 <a href="#">MAY 8, 2018</a>
-                                <a href="archive.html">lifestyle</a>
+                                <a href="/archive">lifestyle</a>
                             </div>
-                            <a href="video-post.html" class="post-title" data-animation="fadeInUp" data-delay="300ms">Party Jokes Startling But Unnecessary</a>
-                            <a href="video-post.html" class="video-play" data-animation="bounceIn" data-delay="500ms"><i class="fa fa-play"></i></a>
+                            <a href="/video_post" class="post-title" data-animation="fadeInUp" data-delay="300ms">Party Jokes Startling But Unnecessary</a>
+                            <a href="/video_post" class="video-play" data-animation="bounceIn" data-delay="500ms"><i class="fa fa-play"></i></a>
                         </div>
                     </div>
                 </div>
@@ -216,10 +216,9 @@
                 <!-- Single Blog Post -->
                 <div class="single-blog-post d-flex">
                     <div class="post-thumbnail">
-                        <img src="img/bg-img/4.jpg" alt="">
-                    </div>
+                        <img src="{{ asset('assets/frontend/img/bg-img/4.jpg')}}">                    </div>
                     <div class="post-content">
-                        <a href="single-post.html" class="post-title">Global Travel And Vacations Luxury Travel</a>
+                        <a href="/single_post" class="post-title">Global Travel And Vacations Luxury Travel</a>
                         <div class="post-meta d-flex justify-content-between">
                             <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
                             <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</a>
@@ -231,10 +230,9 @@
                 <!-- Single Blog Post -->
                 <div class="single-blog-post d-flex">
                     <div class="post-thumbnail">
-                        <img src="img/bg-img/5.jpg" alt="">
-                    </div>
+                        <img src="{{ asset('assets/frontend/img/bg-img/5.jpg')}}">                    </div>
                     <div class="post-content">
-                        <a href="single-post.html" class="post-title">Cruising Destination Ideas</a>
+                        <a href="/single_post" class="post-title">Cruising Destination Ideas</a>
                         <div class="post-meta d-flex justify-content-between">
                             <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
                             <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</a>
@@ -246,10 +244,9 @@
                 <!-- Single Blog Post -->
                 <div class="single-blog-post d-flex">
                     <div class="post-thumbnail">
-                        <img src="img/bg-img/6.jpg" alt="">
-                    </div>
+                        <img src="{{ asset('assets/frontend/img/bg-img/6.jpg')}}">                    </div>
                     <div class="post-content">
-                        <a href="single-post.html" class="post-title">The Luxury Of Traveling With</a>
+                        <a href="/single_post" class="post-title">The Luxury Of Traveling With</a>
                         <div class="post-meta d-flex justify-content-between">
                             <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
                             <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</a>
@@ -261,10 +258,9 @@
                 <!-- Single Blog Post -->
                 <div class="single-blog-post d-flex">
                     <div class="post-thumbnail">
-                        <img src="img/bg-img/7.jpg" alt="">
-                    </div>
+                        <img src="{{ asset('assets/frontend/img/bg-img/7.jpg')}}">                    </div>
                     <div class="post-content">
-                        <a href="single-post.html" class="post-title">Choose The Perfect Accommodations</a>
+                        <a href="/single_post" class="post-title">Choose The Perfect Accommodations</a>
                         <div class="post-meta d-flex justify-content-between">
                             <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
                             <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</a>
@@ -276,10 +272,9 @@
                 <!-- Single Blog Post -->
                 <div class="single-blog-post d-flex">
                     <div class="post-thumbnail">
-                        <img src="img/bg-img/8.jpg" alt="">
-                    </div>
+                        <img src="{{ asset('assets/frontend/img/bg-img/8.jpg')}}">                    </div>
                     <div class="post-content">
-                        <a href="single-post.html" class="post-title">A Guide To Rocky Mountain Vacations</a>
+                        <a href="/single_post" class="post-title">A Guide To Rocky Mountain Vacations</a>
                         <div class="post-meta d-flex justify-content-between">
                             <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
                             <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</a>
@@ -291,11 +286,11 @@
 
             <!-- Sidebar Widget -->
             <div class="single-sidebar-widget">
-                <a href="#" class="add-img"><img src="img/bg-img/add.png" alt=""></a>
+                <a href="#" class="add-img"><img src="{{ asset('assets/frontend/img/bg-img/add.png')}}"></a>
             </div>
 
             <!-- Sidebar Widget -->
-            <div class="single-sidebar-widget p-30">
+            <div class="{{ asset('assets/frontend/single-sidebar-widget p-30')}}">
                 <!-- Section Title -->
                 <div class="section-heading">
                     <h5>Latest Videos</h5>
@@ -304,10 +299,9 @@
                 <!-- Single Blog Post -->
                 <div class="single-blog-post d-flex">
                     <div class="post-thumbnail">
-                        <img src="img/bg-img/9.jpg" alt="">
-                    </div>
+                        <img src="{{ asset('assets/frontend/img/bg-img/9.jpg')}}">                    </div>
                     <div class="post-content">
-                        <a href="single-post.html" class="post-title">Coventry City Guide Including Coventry</a>
+                        <a href="/single_post" class="post-title">Coventry City Guide Including Coventry</a>
                         <div class="post-meta d-flex justify-content-between">
                             <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
                             <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</a>
@@ -319,10 +313,10 @@
                 <!-- Single Blog Post -->
                 <div class="single-blog-post d-flex">
                     <div class="post-thumbnail">
-                        <img src="img/bg-img/10.jpg" alt="">
+                        <img src="{{ asset('assets/frontend/img/bg-img/10.jpg')}}">
                     </div>
                     <div class="post-content">
-                        <a href="single-post.html" class="post-title">Choose The Perfect Accommodations</a>
+                        <a href="/single_post" class="post-title">Choose The Perfect Accommodations</a>
                         <div class="post-meta d-flex justify-content-between">
                             <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
                             <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</a>
@@ -334,10 +328,10 @@
                 <!-- Single Blog Post -->
                 <div class="single-blog-post d-flex">
                     <div class="post-thumbnail">
-                        <img src="img/bg-img/11.jpg" alt="">
+                        <img src="{{ asset('assets/frontend/img/bg-img/11.jpg')}}">
                     </div>
                     <div class="post-content">
-                        <a href="single-post.html" class="post-title">Get Ready Fast For Fall Leaf Viewing</a>
+                        <a href="/single_post" class="post-title">Get Ready Fast For Fall Leaf Viewing</a>
                         <div class="post-meta d-flex justify-content-between">
                             <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
                             <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</a>
@@ -349,10 +343,10 @@
                 <!-- Single Blog Post -->
                 <div class="single-blog-post d-flex">
                     <div class="post-thumbnail">
-                        <img src="img/bg-img/12.jpg" alt="">
+                        <img src="{{ asset('assets/frontend/img/bg-img/12.jpg')}}">
                     </div>
                     <div class="post-content">
-                        <a href="single-post.html" class="post-title">Global Resorts Network Grn Putting</a>
+                        <a href="/single_post" class="post-title">Global Resorts Network Grn Putting</a>
                         <div class="post-meta d-flex justify-content-between">
                             <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
                             <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</a>
@@ -364,10 +358,10 @@
                 <!-- Single Blog Post -->
                 <div class="single-blog-post d-flex">
                     <div class="post-thumbnail">
-                        <img src="img/bg-img/13.jpg" alt="">
+                        <img src="{{ asset('assets/frontend/img/bg-img/13.jpg')}}">
                     </div>
                     <div class="post-content">
-                        <a href="single-post.html" class="post-title">Travel Prudently Luggage And Carry</a>
+                        <a href="/single_post" class="post-title">Travel Prudently Luggage And Carry</a>
                         <div class="post-meta d-flex justify-content-between">
                             <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
                             <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</a>
@@ -393,7 +387,7 @@
                 <div class="trending-post-slides owl-carousel">
                     <!-- Single Trending Post -->
                     <div class="single-trending-post">
-                        <img src="img/bg-img/19.jpg" alt="">
+                        <img src="{{ asset('assets/frontend/img/bg-img/19.jpg')}}">
                         <div class="post-content">
                             <a href="#" class="post-cata">Video</a>
                             <a href="video-post.html" class="post-title">Big Savings On Gas While You Travel</a>
@@ -402,7 +396,7 @@
 
                     <!-- Single Trending Post -->
                     <div class="single-trending-post">
-                        <img src="img/bg-img/20.jpg" alt="">
+                        <img src="{{ asset('assets/frontend/img/bg-img/20.jpg')}}">
                         <div class="post-content">
                             <a href="#" class="post-cata">TV Show</a>
                             <a href="video-post.html" class="post-title">A Guide To Rocky Mountain Vacations</a>
@@ -411,7 +405,7 @@
 
                     <!-- Single Trending Post -->
                     <div class="single-trending-post">
-                        <img src="img/bg-img/21.jpg" alt="">
+                        <img src="{{ asset('assets/frontend/img/bg-img/21.jpg')}}">
                         <div class="post-content">
                             <a href="#" class="post-cata">Sports</a>
                             <a href="video-post.html" class="post-title">The Health Benefits Of Sunglasses</a>
@@ -420,7 +414,7 @@
 
                     <!-- Single Trending Post -->
                     <div class="single-trending-post">
-                        <img src="img/bg-img/19.jpg" alt="">
+                        <img src="{{ asset('assets/frontend/img/bg-img/19.jpg')}}">
                         <div class="post-content">
                             <a href="#" class="post-cata">Video</a>
                             <a href="video-post.html" class="post-title">Big Savings On Gas While You Travel</a>
@@ -429,7 +423,7 @@
 
                     <!-- Single Trending Post -->
                     <div class="single-trending-post">
-                        <img src="img/bg-img/20.jpg" alt="">
+                        <img src="{{ asset('assets/frontend/img/bg-img/20.jpg')}}">
                         <div class="post-content">
                             <a href="#" class="post-cata">TV Show</a>
                             <a href="video-post.html" class="post-title">A Guide To Rocky Mountain Vacations</a>
@@ -438,7 +432,7 @@
 
                     <!-- Single Trending Post -->
                     <div class="single-trending-post">
-                        <img src="img/bg-img/21.jpg" alt="">
+                        <img src="{{ asset('assets/frontend/img/bg-img/21.jpg')}}">
                         <div class="post-content">
                             <a href="#" class="post-cata">Sports</a>
                             <a href="video-post.html" class="post-title">The Health Benefits Of Sunglasses</a>
@@ -461,7 +455,7 @@
                             <div class="single-featured-post">
                                 <!-- Thumbnail -->
                                 <div class="post-thumbnail mb-50">
-                                    <img src="img/bg-img/22.jpg" alt="">
+                                    <img src="{{ asset('assets/frontend/img/bg-img/22.jpg')}}">
                                     <a href="video-post.html" class="video-play"><i class="fa fa-play"></i></a>
                                 </div>
                                 <!-- Post Contetnt -->
@@ -504,10 +498,10 @@
                                     <!-- Single Blog Post -->
                                     <div class="single-blog-post d-flex style-3">
                                         <div class="post-thumbnail">
-                                            <img src="img/bg-img/23.jpg" alt="">
+                                            <img src="{{ asset('assets/frontend/img/bg-img/23.jpg')}}">
                                         </div>
                                         <div class="post-content">
-                                            <a href="single-post.html" class="post-title">Global Resorts Network Grn Putting Timeshares To Shame</a>
+                                            <a href="/single_post" class="post-title">Global Resorts Network Grn Putting Timeshares To Shame</a>
                                             <div class="post-meta d-flex">
                                                 <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 1034</a>
                                                 <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 834</a>
@@ -519,10 +513,10 @@
                                     <!-- Single Blog Post -->
                                     <div class="single-blog-post d-flex style-3">
                                         <div class="post-thumbnail">
-                                            <img src="img/bg-img/24.jpg" alt="">
+                                            <img src="{{ asset('assets/frontend/img/bg-img/24.jpg')}}">
                                         </div>
                                         <div class="post-content">
-                                            <a href="single-post.html" class="post-title">A Guide To Rocky Mountain Vacations</a>
+                                            <a href="/single_post" class="post-title">A Guide To Rocky Mountain Vacations</a>
                                             <div class="post-meta d-flex">
                                                 <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 1034</a>
                                                 <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 834</a>
@@ -534,10 +528,10 @@
                                     <!-- Single Blog Post -->
                                     <div class="single-blog-post d-flex style-3">
                                         <div class="post-thumbnail">
-                                            <img src="img/bg-img/25.jpg" alt="">
+                                            <img src="{{ asset('assets/frontend/img/bg-img/25.jpg')}}">
                                         </div>
                                         <div class="post-content">
-                                            <a href="single-post.html" class="post-title">American Standards And European Culture How To Avoid</a>
+                                            <a href="/single_post" class="post-title">American Standards And European Culture How To Avoid</a>
                                             <div class="post-meta d-flex">
                                                 <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 1034</a>
                                                 <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 834</a>
@@ -549,10 +543,10 @@
                                     <!-- Single Blog Post -->
                                     <div class="single-blog-post d-flex style-3">
                                         <div class="post-thumbnail">
-                                            <img src="img/bg-img/26.jpg" alt="">
+                                            <img src="{{ asset('assets/frontend/img/bg-img/26.jpg')}}">
                                         </div>
                                         <div class="post-content">
-                                            <a href="single-post.html" class="post-title">Mother Earth Hosts Our Travels</a>
+                                            <a href="/single_post" class="post-title">Mother Earth Hosts Our Travels</a>
                                             <div class="post-meta d-flex">
                                                 <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 1034</a>
                                                 <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 834</a>
@@ -564,10 +558,10 @@
                                     <!-- Single Blog Post -->
                                     <div class="single-blog-post d-flex style-3">
                                         <div class="post-thumbnail">
-                                            <img src="img/bg-img/27.jpg" alt="">
+                                            <img src="{{ asset('assets/frontend/img/bg-img/27.jpg')}}">
                                         </div>
                                         <div class="post-content">
-                                            <a href="single-post.html" class="post-title">From Wetlands To Canals And Dams Amsterdam Is Alive</a>
+                                            <a href="/single_post" class="post-title">From Wetlands To Canals And Dams Amsterdam Is Alive</a>
                                             <div class="post-meta d-flex">
                                                 <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 1034</a>
                                                 <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 834</a>
@@ -581,10 +575,10 @@
                                     <!-- Single Blog Post -->
                                     <div class="single-blog-post d-flex style-3">
                                         <div class="post-thumbnail">
-                                            <img src="img/bg-img/23.jpg" alt="">
+                                            <img src="{{ asset('assets/frontend/img/bg-img/23.jpg')}}">
                                         </div>
                                         <div class="post-content">
-                                            <a href="single-post.html" class="post-title">Global Resorts Network Grn Putting Timeshares To Shame</a>
+                                            <a href="/single_post" class="post-title">Global Resorts Network Grn Putting Timeshares To Shame</a>
                                             <div class="post-meta d-flex">
                                                 <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 1034</a>
                                                 <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 834</a>
@@ -596,10 +590,10 @@
                                     <!-- Single Blog Post -->
                                     <div class="single-blog-post d-flex style-3">
                                         <div class="post-thumbnail">
-                                            <img src="img/bg-img/24.jpg" alt="">
+                                            <img src="{{ asset('assets/frontend/img/bg-img/24.jpg')}}">
                                         </div>
                                         <div class="post-content">
-                                            <a href="single-post.html" class="post-title">A Guide To Rocky Mountain Vacations</a>
+                                            <a href="/single_post" class="post-title">A Guide To Rocky Mountain Vacations</a>
                                             <div class="post-meta d-flex">
                                                 <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 1034</a>
                                                 <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 834</a>
@@ -611,10 +605,10 @@
                                     <!-- Single Blog Post -->
                                     <div class="single-blog-post d-flex style-3">
                                         <div class="post-thumbnail">
-                                            <img src="img/bg-img/25.jpg" alt="">
+                                            <img src="{{ asset('assets/frontend/img/bg-img/25.jpg')}}">
                                         </div>
                                         <div class="post-content">
-                                            <a href="single-post.html" class="post-title">American Standards And European Culture How To Avoid</a>
+                                            <a href="/single_post" class="post-title">American Standards And European Culture How To Avoid</a>
                                             <div class="post-meta d-flex">
                                                 <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 1034</a>
                                                 <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 834</a>
@@ -626,10 +620,10 @@
                                     <!-- Single Blog Post -->
                                     <div class="single-blog-post d-flex style-3">
                                         <div class="post-thumbnail">
-                                            <img src="img/bg-img/26.jpg" alt="">
+                                            <img src="{{ asset('assets/frontend/img/bg-img/26.jpg')}}">
                                         </div>
                                         <div class="post-content">
-                                            <a href="single-post.html" class="post-title">Mother Earth Hosts Our Travels</a>
+                                            <a href="/single_post" class="post-title">Mother Earth Hosts Our Travels</a>
                                             <div class="post-meta d-flex">
                                                 <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 1034</a>
                                                 <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 834</a>
@@ -639,12 +633,12 @@
                                     </div>
 
                                     <!-- Single Blog Post -->
-                                    <div class="single-blog-post d-flex style-3">
+                                    <div class="{{ asset('assets/frontend/single-blog-post d-flex style-3')}}">
                                         <div class="post-thumbnail">
-                                            <img src="img/bg-img/27.jpg" alt="">
+                                            <img src="{{ asset('assets/frontend/img/bg-img/27.jpg')}}">
                                         </div>
                                         <div class="post-content">
-                                            <a href="single-post.html" class="post-title">From Wetlands To Canals And Dams Amsterdam Is Alive</a>
+                                            <a href="/single_post" class="post-title">From Wetlands To Canals And Dams Amsterdam Is Alive</a>
                                             <div class="post-meta d-flex">
                                                 <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 1034</a>
                                                 <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 834</a>
@@ -672,12 +666,12 @@
                     <!-- Single Blog Post -->
                     <div class="single-blog-post style-4">
                         <div class="post-thumbnail">
-                            <img src="img/bg-img/28.jpg" alt="">
+                            <img src="{{ asset('assets/frontend/img/bg-img/28.jpg')}}">
                             <a href="video-post.html" class="video-play"><i class="fa fa-play"></i></a>
                             <span class="video-duration">09:27</span>
                         </div>
                         <div class="post-content">
-                            <a href="single-post.html" class="post-title">A Guide To Rocky Mountain Vacations</a>
+                            <a href="/single_post" class="post-title">A Guide To Rocky Mountain Vacations</a>
                             <div class="post-meta d-flex">
                                 <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 1034</a>
                                 <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 834</a>
@@ -689,12 +683,12 @@
                     <!-- Single Blog Post -->
                     <div class="single-blog-post style-4">
                         <div class="post-thumbnail">
-                            <img src="img/bg-img/29.jpg" alt="">
+                            <img src="{{ asset('assets/frontend/img/bg-img/29.jpg')}}">
                             <a href="video-post.html" class="video-play"><i class="fa fa-play"></i></a>
                             <span class="video-duration">09:27</span>
                         </div>
                         <div class="post-content">
-                            <a href="single-post.html" class="post-title">Dentists Are Smiling Over Painless Veneer Alternative</a>
+                            <a href="/single_post" class="post-title">Dentists Are Smiling Over Painless Veneer Alternative</a>
                             <div class="post-meta d-flex">
                                 <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 1034</a>
                                 <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 834</a>
@@ -706,12 +700,12 @@
                     <!-- Single Blog Post -->
                     <div class="single-blog-post style-4">
                         <div class="post-thumbnail">
-                            <img src="img/bg-img/30.jpg" alt="">
+                            <img src="{{ asset('assets/frontend/img/bg-img/30.jpg')}}">
                             <a href="video-post.html" class="video-play"><i class="fa fa-play"></i></a>
                             <span class="video-duration">09:27</span>
                         </div>
                         <div class="post-content">
-                            <a href="single-post.html" class="post-title">Become A Travel Pro In One Easy Lesson</a>
+                            <a href="/single_post" class="post-title">Become A Travel Pro In One Easy Lesson</a>
                             <div class="post-meta d-flex">
                                 <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 1034</a>
                                 <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 834</a>
@@ -723,12 +717,12 @@
                     <!-- Single Blog Post -->
                     <div class="single-blog-post style-4">
                         <div class="post-thumbnail">
-                            <img src="img/bg-img/28.jpg" alt="">
+                            <img src="{{ asset('assets/frontend/img/bg-img/28.jpg')}}">
                             <a href="video-post.html" class="video-play"><i class="fa fa-play"></i></a>
                             <span class="video-duration">09:27</span>
                         </div>
                         <div class="post-content">
-                            <a href="single-post.html" class="post-title">A Guide To Rocky Mountain Vacations</a>
+                            <a href="/single_post" class="post-title">A Guide To Rocky Mountain Vacations</a>
                             <div class="post-meta d-flex">
                                 <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 1034</a>
                                 <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 834</a>
@@ -740,12 +734,12 @@
                     <!-- Single Blog Post -->
                     <div class="single-blog-post style-4">
                         <div class="post-thumbnail">
-                            <img src="img/bg-img/29.jpg" alt="">
+                            <img src="{{ asset('assets/frontend/img/bg-img/29.jpg')}}">
                             <a href="video-post.html" class="video-play"><i class="fa fa-play"></i></a>
                             <span class="video-duration">09:27</span>
                         </div>
                         <div class="post-content">
-                            <a href="single-post.html" class="post-title">Dentists Are Smiling Over Painless Veneer Alternative</a>
+                            <a href="/single_post" class="post-title">Dentists Are Smiling Over Painless Veneer Alternative</a>
                             <div class="post-meta d-flex">
                                 <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 1034</a>
                                 <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 834</a>
@@ -757,12 +751,12 @@
                     <!-- Single Blog Post -->
                     <div class="single-blog-post style-4">
                         <div class="post-thumbnail">
-                            <img src="img/bg-img/30.jpg" alt="">
+                            <img src="{{ asset('assets/frontend/img/bg-img/30.jpg')}}">
                             <a href="video-post.html" class="video-play"><i class="fa fa-play"></i></a>
                             <span class="video-duration">09:27</span>
                         </div>
                         <div class="post-content">
-                            <a href="single-post.html" class="post-title">Become A Travel Pro In One Easy Lesson</a>
+                            <a href="/single_post" class="post-title">Become A Travel Pro In One Easy Lesson</a>
                             <div class="post-meta d-flex">
                                 <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 1034</a>
                                 <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 834</a>
@@ -786,7 +780,7 @@
                     <div class="single-featured-post">
                         <!-- Thumbnail -->
                         <div class="post-thumbnail mb-50">
-                            <img src="img/bg-img/22.jpg" alt="">
+                            <img src="{{ asset('assets/frontend/img/bg-img/22.jpg')}}">
                             <a href="video-post.html" class="video-play"><i class="fa fa-play"></i></a>
                         </div>
                         <!-- Post Contetnt -->
@@ -824,7 +818,7 @@
                     <div class="single-featured-post">
                         <!-- Thumbnail -->
                         <div class="post-thumbnail mb-50">
-                            <img src="img/bg-img/22.jpg" alt="">
+                            <img src="{{ asset('assets/frontend/img/bg-img/22.jpg')}}">
                             <a href="video-post.html" class="video-play"><i class="fa fa-play"></i></a>
                         </div>
                         <!-- Post Contetnt -->
@@ -862,7 +856,7 @@
                     <div class="single-featured-post">
                         <!-- Thumbnail -->
                         <div class="post-thumbnail mb-50">
-                            <img src="img/bg-img/22.jpg" alt="">
+                            <img src="{{ asset('assets/frontend/img/bg-img/22.jpg')}}">
                             <a href="video-post.html" class="video-play"><i class="fa fa-play"></i></a>
                         </div>
                         <!-- Post Contetnt -->
@@ -902,10 +896,10 @@
                     <div class="col-12 col-lg-6">
                         <div class="single-blog-post d-flex style-3 mb-30">
                             <div class="post-thumbnail">
-                                <img src="img/bg-img/31.jpg" alt="">
+                                <img src="{{ asset('assets/frontend/img/bg-img/31.jpg')}}">
                             </div>
                             <div class="post-content">
-                                <a href="single-post.html" class="post-title">From Wetlands To Canals And Dams Amsterdam Is Alive</a>
+                                <a href="/single_post" class="post-title">From Wetlands To Canals And Dams Amsterdam Is Alive</a>
                                 <div class="post-meta d-flex">
                                     <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 1034</a>
                                     <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 834</a>
@@ -919,10 +913,10 @@
                     <div class="col-12 col-lg-6">
                         <div class="single-blog-post d-flex style-3 mb-30">
                             <div class="post-thumbnail">
-                                <img src="img/bg-img/32.jpg" alt="">
+                                <img src="{{ asset('assets/frontend/img/bg-img/32.jpg')}}">
                             </div>
                             <div class="post-content">
-                                <a href="single-post.html" class="post-title">From Wetlands To Canals And Dams Amsterdam Is Alive</a>
+                                <a href="/single_post" class="post-title">From Wetlands To Canals And Dams Amsterdam Is Alive</a>
                                 <div class="post-meta d-flex">
                                     <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 1034</a>
                                     <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 834</a>
@@ -936,10 +930,10 @@
                     <div class="col-12 col-lg-6">
                         <div class="single-blog-post d-flex style-3 mb-30">
                             <div class="post-thumbnail">
-                                <img src="img/bg-img/33.jpg" alt="">
+                                <img src="{{ asset('assets/frontend/img/bg-img/33.jpg')}}">
                             </div>
                             <div class="post-content">
-                                <a href="single-post.html" class="post-title">From Wetlands To Canals And Dams Amsterdam Is Alive</a>
+                                <a href="/single_post" class="post-title">From Wetlands To Canals And Dams Amsterdam Is Alive</a>
                                 <div class="post-meta d-flex">
                                     <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 1034</a>
                                     <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 834</a>
@@ -953,10 +947,10 @@
                     <div class="col-12 col-lg-6">
                         <div class="single-blog-post d-flex style-3 mb-30">
                             <div class="post-thumbnail">
-                                <img src="img/bg-img/34.jpg" alt="">
+                                <img src="{{ asset('assets/frontend/img/bg-img/34.jpg')}}">
                             </div>
                             <div class="post-content">
-                                <a href="single-post.html" class="post-title">From Wetlands To Canals And Dams Amsterdam Is Alive</a>
+                                <a href="/single_post" class="post-title">From Wetlands To Canals And Dams Amsterdam Is Alive</a>
                                 <div class="post-meta d-flex">
                                     <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 1034</a>
                                     <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 834</a>
@@ -1010,7 +1004,7 @@
 
             <!-- Sidebar Widget -->
             <div class="single-sidebar-widget">
-                <a href="#" class="add-img"><img src="img/bg-img/add2.png" alt=""></a>
+                <a href="#" class="add-img"><img src="{{ asset('assets/frontend/img/bg-img/add2.png')}}"></a>
             </div>
 
             <!-- Sidebar Widget -->
@@ -1023,10 +1017,10 @@
                 <!-- Single YouTube Channel -->
                 <div class="single-youtube-channel d-flex">
                     <div class="youtube-channel-thumbnail">
-                        <img src="img/bg-img/14.jpg" alt="">
+                        <img src="{{ asset('assets/frontend/img/bg-img/14.jpg')}}">
                     </div>
                     <div class="youtube-channel-content">
-                        <a href="single-post.html" class="channel-title">TV Show</a>
+                        <a href="/single_post" class="channel-title">TV Show</a>
                         <a href="#" class="btn subscribe-btn"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Subscribe</a>
                     </div>
                 </div>
@@ -1034,10 +1028,10 @@
                 <!-- Single YouTube Channel -->
                 <div class="single-youtube-channel d-flex">
                     <div class="youtube-channel-thumbnail">
-                        <img src="img/bg-img/15.jpg" alt="">
+                        <img src="{{ asset('assets/frontend/img/bg-img/15.jpg')}}">
                     </div>
                     <div class="youtube-channel-content">
-                        <a href="single-post.html" class="channel-title">Game Channel</a>
+                        <a href="/single_post" class="channel-title">Game Channel</a>
                         <a href="#" class="btn subscribe-btn"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Subscribe</a>
                     </div>
                 </div>
@@ -1045,10 +1039,10 @@
                 <!-- Single YouTube Channel -->
                 <div class="single-youtube-channel d-flex">
                     <div class="youtube-channel-thumbnail">
-                        <img src="img/bg-img/16.jpg" alt="">
+                        <img src="{{ asset('assets/frontend/img/bg-img/16.jpg')}}">
                     </div>
                     <div class="youtube-channel-content">
-                        <a href="single-post.html" class="channel-title">Sport Channel</a>
+                        <a href="/single_post" class="channel-title">Sport Channel</a>
                         <a href="#" class="btn subscribe-btn"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Subscribe</a>
                     </div>
                 </div>
@@ -1056,10 +1050,10 @@
                 <!-- Single YouTube Channel -->
                 <div class="single-youtube-channel d-flex">
                     <div class="youtube-channel-thumbnail">
-                        <img src="img/bg-img/17.jpg" alt="">
+                        <img src="{{ asset('assets/frontend/img/bg-img/17.jpg')}}">
                     </div>
                     <div class="youtube-channel-content">
-                        <a href="single-post.html" class="channel-title">Travel Channel</a>
+                        <a href="/single_post" class="channel-title">Travel Channel</a>
                         <a href="#" class="btn subscribe-btn"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Subscribe</a>
                     </div>
                 </div>
@@ -1067,10 +1061,10 @@
                 <!-- Single YouTube Channel -->
                 <div class="single-youtube-channel d-flex">
                     <div class="youtube-channel-thumbnail">
-                        <img src="img/bg-img/18.jpg" alt="">
+                        <img src="{{ asset('assets/frontend/img/bg-img/18.jpg')}}">
                     </div>
                     <div class="youtube-channel-content">
-                        <a href="single-post.html" class="channel-title">LifeStyle Channel</a>
+                        <a href="/single_post" class="channel-title">LifeStyle Channel</a>
                         <a href="#" class="btn subscribe-btn"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Subscribe</a>
                     </div>
                 </div>
@@ -1105,7 +1099,7 @@
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="footer-widget">
                         <!-- Logo -->
-                        <a href="index.html" class="foo-logo"><img src="img/core-img/logo2.png" alt=""></a>
+                        <a href="/" class="foo-logo"><img src="{{ asset('assets/frontend/img/core-img/logo.png')}}"></a>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         <div class="footer-social-info">
                             <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
@@ -1145,10 +1139,10 @@
                         <!-- Single Blog Post -->
                         <div class="single-blog-post style-2 d-flex">
                             <div class="post-thumbnail">
-                                <img src="img/bg-img/12.jpg" alt="">
+                                <img src="{{ asset('assets/frontend/img/bg-img/12.jpg')}}">
                             </div>
                             <div class="post-content">
-                                <a href="single-post.html" class="post-title">Take A Romantic Break In A Boutique Hotel</a>
+                                <a href="/single_post" class="post-title">Take A Romantic Break In A Boutique Hotel</a>
                                 <div class="post-meta d-flex justify-content-between">
                                     <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
                                     <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</a>
@@ -1159,10 +1153,10 @@
                         <!-- Single Blog Post -->
                         <div class="single-blog-post style-2 d-flex">
                             <div class="post-thumbnail">
-                                <img src="img/bg-img/13.jpg" alt="">
+                                <img src="{{ asset('assets/frontend/img/bg-img/13.jpg')}}">
                             </div>
                             <div class="post-content">
-                                <a href="single-post.html" class="post-title">Travel Prudently Luggage And Carry On</a>
+                                <a href="/single_post" class="post-title">Travel Prudently Luggage And Carry On</a>
                                 <div class="post-meta d-flex justify-content-between">
                                     <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
                                     <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</a>
