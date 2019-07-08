@@ -74,7 +74,9 @@
 
         <main class="py-4">
             @yield('content')
+            @include('backend.kategori.modal')
         </main>
     </div>
+    <script src="{{asset('js/kategori.js')}}"> </script>
 </body>
 </html>
