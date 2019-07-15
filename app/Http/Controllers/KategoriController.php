@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Kategori;
+use Auth;
+use Session;
 
 class KategoriController extends Controller
 {
@@ -12,6 +14,12 @@ class KategoriController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function index()
     {
         $kategori = Kategori::all();
@@ -25,8 +33,7 @@ class KategoriController extends Controller
      */
     public function create()
     {
-        $nama = nama::all();
-        return view('model', compact('nama'));
+        return view('backend.kategori.create', compact('kategori'));
     }
 
     /**
@@ -39,13 +46,14 @@ class KategoriController extends Controller
     {
         $kategori = new Kategori;
         $kategori->nama = $request->get('nama');
+        $kategori->slug = $request->get('nama');
         $kategori->save();
-
-        Session::flash("flash_notification",[
+        Session::flash("flash_notification",
+        [
             "level" => "success",
             "massage"=> "Berhasil menyimpan <b>$kategori->nama</b>"
         ]);
-        return response()->json('modal');
+        return redirect()->route('kategori.index');
     }
 
     /**
@@ -56,7 +64,7 @@ class KategoriController extends Controller
      */
     public function show($id)
     {
-        //
+       //
     }
 
     /**
@@ -67,7 +75,8 @@ class KategoriController extends Controller
      */
     public function edit($id)
     {
-        //
+        $kategori = kategori::findOrFail($id);
+        return view('kategori.edit', compact('kategori'));
     }
 
     /**
@@ -79,7 +88,16 @@ class KategoriController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $kategori = Kategori::findOrFail($id);
+        $kategori->nama = $request->get('nama');
+        $kategori->alamat = $request->get('alamat');
+        $kategori->no_tlp = $request->get('no_tlp');
+        $kategori->save();
+        Session::flash("flash_notification",[
+            "level" => "success",
+            "massage"=> "Berhasil menyimpan <b>$kategori->nama</b>"
+        ]);
+        return redirect()->route('kategori.index');
     }
 
     /**
@@ -90,6 +108,11 @@ class KategoriController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $kategori = kategori::findOrFail($id)->delete();
+        Session::flash("flash_notification",[
+            "level" => "success",
+            "massage"=> "Data berhasil di hapus"
+        ]);
+        return redirect()->route('kategori.index');
     }
 }

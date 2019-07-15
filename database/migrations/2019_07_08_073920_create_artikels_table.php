@@ -15,6 +15,14 @@ class CreateArtikelsTable extends Migration
     {
         Schema::create('artikels', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('judul');
+            $table->unsignedBigInteger('user_id');
+            $table->text('konten');
+            $table->string('foto');
+            $table->string('slug');
+            $table->unsignedBigInteger('kategori_id');
+            $table->foreign('kategori_id')->references('id')->on('kategoris')->onDelete('CASCADE');
+            $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
         });
     }

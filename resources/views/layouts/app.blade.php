@@ -9,8 +9,21 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css" rel="stylesheet" />
+
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('assets/backend/ckeditor/ckeditor.js') }}"></script>
+    <script>
+    CKEDITOR.replace('texteditor');
+    </script>
+    <script src="{{ asset('assets/backend/select2-4.0.7/dist/js/select2.min.js')}}"></script>
+    <script>
+    $(document).ready(function () {
+        $('.tag').select2()
+    })
+    </script>
+
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -33,7 +46,15 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('artikel.index') }}">{{ __('Artikel') }}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('kategori.index') }}">{{ __('Kategori') }}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('tag.index') }}">{{ __('Tag') }}</a>
+                        </li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -77,6 +98,7 @@
             @include('backend.kategori.modal')
         </main>
     </div>
+    
     <script src="{{asset('js/kategori.js')}}"> </script>
 </body>
 </html>

@@ -49,3 +49,4 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('/admin/kategori', 'KategoriController');
 Route::resource('/admin/artikel', 'ArtikelController');
+Route::resource('/admin/tag', 'TagController');
