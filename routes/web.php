@@ -1,4 +1,5 @@
 <?php
+use App\Artikel;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,7 +13,8 @@
 */
 
 Route::get('/', function () {
-    return view('index');
+    $artikel = Artikel::all();
+    return view('index', compact('artikel'));
 });
 
 Route::get('contact', function () {
