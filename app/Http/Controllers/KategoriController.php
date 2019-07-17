@@ -64,7 +64,7 @@ class KategoriController extends Controller
      */
     public function show($id)
     {
-       //
+        //tatap mata ojan
     }
 
     /**
