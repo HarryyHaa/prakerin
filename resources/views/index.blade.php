@@ -152,7 +152,7 @@
                                 <a href="/archive">lifestyle</a>
                             </div>
                             <a href="/video_post" class="post-title" data-animation="fadeInUp" data-delay="300ms">Party Jokes Startling But Unnecessary</a>
-                            <a href="/video_post" class="video-play" data-animation="bounceIn" data-delay="500ms"><i class="fa fa-play"></i></a>
+                            
                         </div>
                     </div>
                 </div>
@@ -160,7 +160,7 @@
         </div>
 
         <!-- Single Blog Post -->
-        <div class="hero-blog-post bg-img bg-overlay" style="background-image: url('{{ asset('assets/frontend/img/bg-img/2.jpg')}}')">
+        <div class="hero-blog-post bg-img bg-overlay" style="background-image: url('{{ asset('assets/frontend/img/bg-img/w.jpg')}}')">
             <div class="container h-100">
                 <div class="row h-100 align-items-center">
                     <div class="col-12">
@@ -171,7 +171,7 @@
                                 <a href="/archive">lifestyle</a>
                             </div>
                             <a href="/video_post" class="post-title" data-animation="fadeInUp" data-delay="300ms">Party Jokes Startling But Unnecessary</a>
-                            <a href="/video_post" class="video-play" data-animation="bounceIn" data-delay="500ms"><i class="fa fa-play"></i></a>
+                            
                         </div>
                     </div>
                 </div>
@@ -190,7 +190,7 @@
                                 <a href="/archive">lifestyle</a>
                             </div>
                             <a href="/video_post" class="post-title" data-animation="fadeInUp" data-delay="300ms">Party Jokes Startling But Unnecessary</a>
-                            <a href="/video_post" class="video-play" data-animation="bounceIn" data-delay="500ms"><i class="fa fa-play"></i></a>
+                            
                         </div>
                     </div>
                 </div>
