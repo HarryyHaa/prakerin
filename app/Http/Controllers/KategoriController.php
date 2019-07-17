@@ -33,9 +33,8 @@ class KategoriController extends Controller
      */
     public function create()
     {
-        return view('backend.kategori.create', compact('kategori'));
+        return view('backend.kategori.create');
     }
-
     /**
      * Store a newly created resource in storage.
      *
@@ -64,7 +63,7 @@ class KategoriController extends Controller
      */
     public function show($id)
     {
-        
+        // 
     }
 
     /**
