@@ -58,59 +58,7 @@
                             <div class="classynav">
                                 <ul>
                                     <li class="active"><a href="/">Home</a></li>
-                                    <li><a href="archive">Archive</a></li>
-                                    <li><a href="#">Pages</a>
-                                        <ul class="dropdown">
-                                            <li><a href="/">Home</a></li>
-                                            <li><a href="/archive">Archive</a></li>
-                                            <li><a href="/video_post">Single Video Post</a></li>
-                                            <li><a href="/single_post">Single Post</a></li>
-                                            <li><a href="/about">About Us</a></li>
-                                            <li><a href="/contact">Contact</a></li>
-                                            <li><a href="/submit">Submit Video</a></li>
-                                            <li><a href="/login">Login</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Mega</a>
-                                        <div class="megamenu">
-                                            <ul class="single-mega cn-col-4">
-                                                <li><a href="/">Home</a></li>
-                                                <li><a href="/archive">Archive</a></li>
-                                                <li><a href="/video_post">Single Video Post</a></li>
-                                                <li><a href="/single_post">Single Post</a></li>
-                                                <li><a href="/about">About Us</a></li>
-                                                <li><a href="/contact">Contact</a></li>
-                                                <li><a href="/login">Login</a></li>
-                                            </ul>
-                                            <ul class="single-mega cn-col-4">
-                                                <li><a href="/">Home</a></li>
-                                                <li><a href="/archive">Archive</a></li>
-                                                <li><a href="/video_post">Single Video Post</a></li>
-                                                <li><a href="/single_post">Single Post</a></li>
-                                                <li><a href="/about">About Us</a></li>
-                                                <li><a href="/contact">Contact</a></li>
-                                                <li><a href="/login">Login</a></li>
-                                            </ul>
-                                            <ul class="single-mega cn-col-4">
-                                                <li><a href="/">Home</a></li>
-                                                <li><a href="/archive">Archive</a></li>
-                                                <li><a href="video-post">Single Video Post</a></li>
-                                                <li><a href="/single_post">Single Post</a></li>
-                                                <li><a href="about">About Us</a></li>
-                                                <li><a href="/contact">Contact</a></li>
-                                                <li><a href="login">Login</a></li>
-                                            </ul>
-                                            <ul class="single-mega cn-col-4">
-                                                <li><a href="/">Home</a></li>
-                                                <li><a href="/archive">Archive</a></li>
-                                                <li><a href="/video_post">Single Video Post</a></li>
-                                                <li><a href="/single_post">Single Post</a></li>
-                                                <li><a href="/about">About Us</a></li>
-                                                <li><a href="/contact">Contact</a></li>
-                                                <li><a href="/login">Login</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
+                                    <li><a href="archive">Singel Post</a></li>
                                     <li><a href="/about">About</a></li>
                                     <li><a href="/contact">Contact</a></li>
                                 </ul>

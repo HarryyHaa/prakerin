@@ -24,13 +24,10 @@ Route::get('contact', function () {
 Route::get('about', function () {
     return view('about');
 });
+    
 
 Route::get('archive', function () {
     return view('archive');
-});
-
-Route::get('singel', function () {
-    return view('singel_post');
 });
 
 Route::get('video', function () {
@@ -48,6 +45,7 @@ Route::get('login', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/post/{slug}', 'FrontendController@singel')->name('singel.post');
 
 Route::resource('/admin/kategori', 'KategoriController');
 Route::resource('/admin/artikel', 'ArtikelController');

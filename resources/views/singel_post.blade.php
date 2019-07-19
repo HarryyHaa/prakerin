@@ -176,16 +176,18 @@
             <div class="row justify-content-center">
                 <!-- Post Details Content Area -->
                 <div class="col-12 col-xl-8">
+                @foreach ($artikel as $artikels)
                     <div class="post-details-content bg-white mb-30 p-30 box-shadow">
                         <div class="blog-thumb mb-30">
-                            <img src="{{ asset('assets/frontend/img/bg-img/50.jpg')}}" alt="">
+                        <img src="{{ asset('assets/img/artikel/'.$artikels->foto)}}"  alt="">
+
                         </div>
                         <div class="blog-content">
                             <div class="post-meta">
-                                <a href="#">MAY 8, 2018</a>
-                                <a href="/archive">lifestyle</a>
+                            <a href="#">{{  date('l, d-m-Y')}}</a>
+                            <a href="#">{{ $artikels->kategori->nama_kategori}}</a>
                             </div>
-                            <h4 class="post-title">From Wetlands To Canals And Dams Amsterdam Is Alive</h4>
+                            <h4 class="post-title">{{ $artikels->judul }}</h4>
                             <!-- Post Meta -->
                             <div class="post-meta-2">
                                 <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 1034</a>
@@ -193,9 +195,9 @@
                                 <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 234</a>
                             </div>
 
-                            <p>Lorem ipsum dolor sit amet, consectetur sita adipiscing elit. Proin molestie accumsan orci suneget placerat. Etiama faucibuss orci quis posuere vestibulu. Ut id purusos ultricies, dictumax quam id, ullamcorper urna. Curabitur sitdown nisi vitae nisi vestotana vestibul ut non massa. Aliquam erat volutpat. Morbi nect nunc et orci euismode finibus. Donec lobortis venenatis turpis. Aenean act congue arcu, nect porttitor magna. Nam consequa ligula nibh, in maximus gravida. Vivamus nuornare masa. Quisque sed honcus leo, ullamcorper auctor mi. Maecenas mollis purus, mattis nisl condimentum. Nam eros elementu, congue diam imperdiet, interdum tellus.</p>
-
-                            <p>Mauris dapibus turpis vel ialis tempor. Morbi turpis leon, pulvinar vitae convallis vitae, scelerisque necto eros. Suspendisse vitae pharetra risus. Pellentesque varius, felis in lacinia faucibus, ipsum liula aliquam nulla, non honcus nunc ipsum eu risus. Nunc finibus euismod magna sagittis. Sed dictum libero consectetur.</p>
+                            <p>{!! $artikels->konten !!}</p><br>
+                            @endforeach
+                            <a href="#"> @foreach ($artikel as $tags){{ $tags->nama_tag }} @endforeach</a>
 
                             <div class="row">
                                 <div class="col-12 col-lg-8">
