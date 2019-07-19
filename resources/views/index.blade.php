@@ -68,15 +68,12 @@
                         <div class="top-meta-data d-flex align-items-center">
                             <!-- Top Search Area -->
                             <div class="top-search-area">
-                                <form action="/" method="post">
-                                    <input type="search" name="top-search" id="topSearch" placeholder="Search and hit enter...">
-                                    <button type="/submit" class="btn"><i class="fa fa-search" aria-hidden="true"></i></button>
-                                </form>
+                               
                             </div>
                             <!-- Login -->
                             <a href="/login" class="login-btn"><i class="fa fa-user" aria-hidden="true"></i></a>
                             <!-- Submit Video -->
-                            <a href="/submit" class="submit"><span><i class="fa fa-cloud-upload"></i></span> <span class="video-text">Submit Video</span></a>
+                            
                         </div>
                     </div>
                 </nav>
@@ -95,10 +92,10 @@
                         <!-- Post Contetnt -->
                         <div class="post-content text-center">
                             <div class="post-meta" data-animation="fadeInUp" data-delay="100ms">
-                                <a href="#">MAY 8, 2019</a>
-                                <a href="/archive">lifestyle</a>
+                                <a href="#">JULY 18, 2019</a>
+                                <a href="/blog">wisata</a>
                             </div>
-                            <a href="/video_post" class="post-title" data-animation="fadeInUp" data-delay="300ms">Party Jokes Startling But Unnecessary</a>
+                            <a href="/blog" class="post-title" data-animation="fadeInUp" data-delay="300ms">Nikmati Wiata Di Indonesia </a>
                             
                         </div>
                     </div>
@@ -114,10 +111,10 @@
                         <!-- Post Contetnt -->
                         <div class="post-content text-center">
                             <div class="post-meta" data-animation="fadeInUp" data-delay="100ms">
-                                <a href="#">MAY 8, 2018</a>
-                                <a href="/archive">lifestyle</a>
+                                <a href="#">July 18, 2018</a>
+                                <a href="/blog">wisata</a>
                             </div>
-                            <a href="/video_post" class="post-title" data-animation="fadeInUp" data-delay="300ms">Party Jokes Startling But Unnecessary</a>
+                            <a href="/blog" class="post-title" data-animation="fadeInUp" data-delay="300ms">Carilah Tempat Tempat Wisata Yang Anda Inginkan </a>
                             
                         </div>
                     </div>
@@ -133,10 +130,10 @@
                         <!-- Post Contetnt -->
                         <div class="post-content text-center">
                             <div class="post-meta" data-animation="fadeInUp" data-delay="100ms">
-                                <a href="#">MAY 8, 2018</a>
-                                <a href="/archive">lifestyle</a>
+                                <a href="#">July 18, 2018</a>
+                                <a href="/blog">wisata</a>
                             </div>
-                            <a href="/video_post" class="post-title" data-animation="fadeInUp" data-delay="300ms">Party Jokes Startling But Unnecessary</a>
+                            <a href="/blog" class="post-title" data-animation="fadeInUp" data-delay="300ms">Nikmati Wisata Alam DiIndonesia</a>
                             
                         </div>
                     </div>
@@ -157,167 +154,29 @@
             <div class="single-sidebar-widget p-30">
                 <!-- Section Title -->
                 <div class="section-heading">
-                    <h5>Most Popular</h5>
+                    <h5> </h5>
                 </div>
 
                 <!-- Single Blog Post -->
-                <div class="single-blog-post d-flex">
-                    <div class="post-thumbnail">
-                        <img src="{{ asset('assets/frontend/img/bg-img/4.jpg')}}">                    </div>
-                    <div class="post-content">
-                        <a href="/single_post" class="post-title">Global Travel And Vacations Luxury Travel</a>
-                        <div class="post-meta d-flex justify-content-between">
-                            <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
-                            <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</a>
-                            <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-                        </div>
-                    </div>
-                </div>
+                
 
                 <!-- Single Blog Post -->
-                <div class="single-blog-post d-flex">
-                    <div class="post-thumbnail">
-                        <img src="{{ asset('assets/frontend/img/bg-img/5.jpg')}}">                    </div>
-                    <div class="post-content">
-                        <a href="/single_post" class="post-title">Cruising Destination Ideas</a>
-                        <div class="post-meta d-flex justify-content-between">
-                            <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
-                            <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</a>
-                            <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-                        </div>
-                    </div>
-                </div>
+                
+                <!-- Single Blog Post -->
+                
 
                 <!-- Single Blog Post -->
-                <div class="single-blog-post d-flex">
-                    <div class="post-thumbnail">
-                        <img src="{{ asset('assets/frontend/img/bg-img/6.jpg')}}">                    </div>
-                    <div class="post-content">
-                        <a href="/single_post" class="post-title">The Luxury Of Traveling With</a>
-                        <div class="post-meta d-flex justify-content-between">
-                            <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
-                            <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</a>
-                            <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-                        </div>
-                    </div>
-                </div>
+               
 
                 <!-- Single Blog Post -->
-                <div class="single-blog-post d-flex">
-                    <div class="post-thumbnail">
-                        <img src="{{ asset('assets/frontend/img/bg-img/7.jpg')}}">                    </div>
-                    <div class="post-content">
-                        <a href="/single_post" class="post-title">Choose The Perfect Accommodations</a>
-                        <div class="post-meta d-flex justify-content-between">
-                            <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
-                            <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</a>
-                            <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Blog Post -->
-                <div class="single-blog-post d-flex">
-                    <div class="post-thumbnail">
-                        <img src="{{ asset('assets/frontend/img/bg-img/8.jpg')}}">                    </div>
-                    <div class="post-content">
-                        <a href="/single_post" class="post-title">A Guide To Rocky Mountain Vacations</a>
-                        <div class="post-meta d-flex justify-content-between">
-                            <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
-                            <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</a>
-                            <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
 
             <!-- Sidebar Widget -->
-            <div class="single-sidebar-widget">
-                <a href="#" class="add-img"><img src="{{ asset('assets/frontend/img/bg-img/add.png')}}"></a>
-            </div>
+           
 
             <!-- Sidebar Widget -->
-            <div class="{{ asset('assets/frontend/single-sidebar-widget p-30')}}">
-                <!-- Section Title -->
-                <div class="section-heading">
-                    <h5>Latest Videos</h5>
-                </div>
-
-                <!-- Single Blog Post -->
-                <div class="single-blog-post d-flex">
-                    <div class="post-thumbnail">
-                        <img src="{{ asset('assets/frontend/img/bg-img/9.jpg')}}">                    </div>
-                    <div class="post-content">
-                        <a href="/single_post" class="post-title">Coventry City Guide Including Coventry</a>
-                        <div class="post-meta d-flex justify-content-between">
-                            <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
-                            <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</a>
-                            <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Blog Post -->
-                <div class="single-blog-post d-flex">
-                    <div class="post-thumbnail">
-                        <img src="{{ asset('assets/frontend/img/bg-img/10.jpg')}}">
-                    </div>
-                    <div class="post-content">
-                        <a href="/single_post" class="post-title">Choose The Perfect Accommodations</a>
-                        <div class="post-meta d-flex justify-content-between">
-                            <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
-                            <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</a>
-                            <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Blog Post -->
-                <div class="single-blog-post d-flex">
-                    <div class="post-thumbnail">
-                        <img src="{{ asset('assets/frontend/img/bg-img/11.jpg')}}">
-                    </div>
-                    <div class="post-content">
-                        <a href="/single_post" class="post-title">Get Ready Fast For Fall Leaf Viewing</a>
-                        <div class="post-meta d-flex justify-content-between">
-                            <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
-                            <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</a>
-                            <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Blog Post -->
-                <div class="single-blog-post d-flex">
-                    <div class="post-thumbnail">
-                        <img src="{{ asset('assets/frontend/img/bg-img/12.jpg')}}">
-                    </div>
-                    <div class="post-content">
-                        <a href="/single_post" class="post-title">Global Resorts Network Grn Putting</a>
-                        <div class="post-meta d-flex justify-content-between">
-                            <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
-                            <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</a>
-                            <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Blog Post -->
-                <div class="single-blog-post d-flex">
-                    <div class="post-thumbnail">
-                        <img src="{{ asset('assets/frontend/img/bg-img/13.jpg')}}">
-                    </div>
-                    <div class="post-content">
-                        <a href="/single_post" class="post-title">Travel Prudently Luggage And Carry</a>
-                        <div class="post-meta d-flex justify-content-between">
-                            <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
-                            <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</a>
-                            <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+            
         </div>
 
         <!-- >>>>>>>>>>>>>>>>>>>>
