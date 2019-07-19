@@ -24,11 +24,6 @@ Route::get('contact', function () {
 Route::get('about', function () {
     return view('about');
 });
-    
-
-Route::get('archive', function () {
-    return view('archive');
-});
 
 Route::get('video', function () {
     return view('video_post');
@@ -46,6 +41,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/post/{slug}', 'FrontendController@singel')->name('singel.post');
+Route::get('/blog', 'FrontendController@allblog')->name('all.blog');
 
 Route::resource('/admin/kategori', 'KategoriController');
 Route::resource('/admin/artikel', 'ArtikelController');

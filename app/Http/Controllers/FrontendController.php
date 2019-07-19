@@ -18,14 +18,15 @@ class FrontendController extends Controller
 
     public function allblog(Request $request)
     {
-        $artikel = Artikel::orderBy('created_at', 'desc')->paginate(2);
-
+        $artikel = Artikel::with('kategori', 'tag', 'user')->latest()->paginate(5);
+        $kategori = Kategori::all();
+        
         $cari = $request->cari;
 
         if ($cari) {
             $artikel = Artikel::where('judul', 'LIKE', "%$cari%")->paginate(4);
         }
-        return view('frontend.mag.index', compact('artikel'));
+        return view('archive', compact('artikel', 'kategori'));
     }
 
     public function blogall(Artikel $artikel)

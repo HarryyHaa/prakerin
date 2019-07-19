@@ -58,10 +58,9 @@
                             <div class="classynav">
                                 <ul>
                                     <li class="active"><a href="/">Home</a></li>
-                                    <li><a href="/archive">Singel Post </a></li>
+                                    <li><a href="/blog">Artikel </a></li>
                                     
-                                    <li><a href="/about">About</a></li>
-                                    <li><a href="/contact">Contact</a></li>
+                                   
                                 </ul>
                             </div>
                             <!-- Nav End -->
@@ -78,7 +77,7 @@
                             <!-- Login -->
                             <a href="/login" class="login-btn"><i class="fa fa-user" aria-hidden="true"></i></a>
                             <!-- Submit Video -->
-                            <a href="/submit" class="submit-video"><span><i class="fa fa-cloud-upload"></i></span> <span class="video-text">Submit Video</span></a>
+                            
                         </div>
                     </div>
                 </nav>
@@ -93,7 +92,7 @@
             <div class="row h-100 align-items-center">
                 <div class="col-12">
                     <div class="breadcrumb-content">
-                        <h2>Singel Post</h2>
+                        <h2>Artikel</h2>
                     </div>
                 </div>
             </div>
@@ -127,307 +126,65 @@
                     <div class="archive-posts-area bg-white p-30 mb-30 box-shadow">
 
                         <!-- Single Catagory Post -->
-                        <div class="single-catagory-post d-flex flex-wrap">
-                            <!-- Thumbnail -->
-                            <div class="post-thumbnail bg-img" style="background-image: url({{ asset('assets/frontend/img/bg-img/42.jpg')}})">
-                                <a href="/video_post" class="video-play"><i class="fa fa-play"></i></a>
-                            </div>
+                        @foreach($artikel as $blog)
+                            <div class="single-catagory-post d-flex flex-wrap">
+                                <!-- Thumbnail -->
+                                <div class="post-thumbnail bg-img" style="background-image: url({{ asset('assets/img/artikel/'.$blog->foto)}})">
+                                </div>
 
-                            <!-- Post Contetnt -->
-                            <div class="post-content">
-                                <div class="post-meta">
-                                    <a href="#">MAY 8, 2018</a>
-                                    <a href="/archive">lifestyle</a>
+                                <!-- Post Contetnt -->
+                                <div class="post-content">
+                                    <div class="post-meta">
+                                        <a href="#">{{ $blog->created_at->diffForHumans() }}</a>
+                                        <a href="/category/{{$blog->kategori->slug}}">{{$blog->kategori->nama}}</a>
+                                    </div>
+                                    <a href="/video_post" class="post-title">{{ $blog->judul }}</a>
+                                    <!-- Post Meta -->
+                                    <div class="post-meta-2">
+                                        @foreach($blog->tag as $tag)
+                                            <a href="/tag/{{$tag->slug}}"><i class="fa fa-hashtag"></i> {{ $tag->nama }}</a>
+                                        @endforeach
+                                    </div>
+                                    <p>{!! str_replace('5', '50', $blog->konten) !!}</p>
                                 </div>
-                                <a href="/video_post" class="post-title">Global Travel And Vacations Luxury Travel On A Tight Budget</a>
-                                <!-- Post Meta -->
-                                <div class="post-meta-2">
-                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 1034</a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 834</a>
-                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 234</a>
-                                </div>
-                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa officia deserunt mollit anim id est laborum. Sed ut perspiciatis lorem150</p>
                             </div>
-                        </div>
-
-                        <!-- Single Catagory Post -->
-                        <div class="single-catagory-post d-flex flex-wrap">
-                            <!-- Thumbnail -->
-                            <div class="post-thumbnail bg-img" style="background-image: url({{ asset('assets/frontend/img/bg-img/43.jpg')}})">
-                                <a href="/video_post" class="video-play"><i class="fa fa-play"></i></a>
-                            </div>
-
-                            <!-- Post Contetnt -->
-                            <div class="post-content">
-                                <div class="post-meta">
-                                    <a href="#">MAY 8, 2018</a>
-                                    <a href="/archive">lifestyle</a>
-                                </div>
-                                <a href="/video_post" class="post-title">The Luxury Of Traveling With Yacht Charter Companies</a>
-                                <!-- Post Meta -->
-                                <div class="post-meta-2">
-                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 1034</a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 834</a>
-                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 234</a>
-                                </div>
-                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa officia deserunt mollit anim id est laborum. Sed ut perspiciatis lorem150</p>
-                            </div>
-                        </div>
-
-                        <!-- Single Catagory Post -->
-                        <div class="single-catagory-post d-flex flex-wrap">
-                            <!-- Thumbnail -->
-                            <div class="post-thumbnail bg-img" style="background-image: url({{ asset('assets/frontend/img/bg-img/44.jpg')}})">
-                                <a href="/video_post" class="video-play"><i class="fa fa-play"></i></a>
-                            </div>
-
-                            <!-- Post Contetnt -->
-                            <div class="post-content">
-                                <div class="post-meta">
-                                    <a href="#">MAY 8, 2018</a>
-                                    <a href="/archive">lifestyle</a>
-                                </div>
-                                <a href="/video_post" class="post-title">Will The Democrats Be Able To Reverse The Online Gambling Ban</a>
-                                <!-- Post Meta -->
-                                <div class="post-meta-2">
-                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 1034</a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 834</a>
-                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 234</a>
-                                </div>
-                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa officia deserunt mollit anim id est laborum. Sed ut perspiciatis lorem150</p>
-                            </div>
-                        </div>
-
-                        <!-- Single Catagory Post -->
-                        <div class="single-catagory-post d-flex flex-wrap">
-                            <!-- Thumbnail -->
-                            <div class="post-thumbnail bg-img" style="background-image: url({{ asset('assets/frontend/img/bg-img/45.jpg')}})">
-                                <a href="/video_post" class="video-play"><i class="fa fa-play"></i></a>
-                            </div>
-
-                            <!-- Post Contetnt -->
-                            <div class="post-content">
-                                <div class="post-meta">
-                                    <a href="#">MAY 8, 2018</a>
-                                    <a href="/archive">lifestyle</a>
-                                </div>
-                                <a href="/video_post" class="post-title">Family Safari Vacation To The Home Of The Gods</a>
-                                <!-- Post Meta -->
-                                <div class="post-meta-2">
-                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 1034</a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 834</a>
-                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 234</a>
-                                </div>
-                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa officia deserunt mollit anim id est laborum. Sed ut perspiciatis lorem150</p>
-                            </div>
-                        </div>
-
-                        <!-- Single Catagory Post -->
-                        <div class="single-catagory-post d-flex flex-wrap">
-                            <!-- Thumbnail -->
-                            <div class="post-thumbnail bg-img" style="background-image: url({{ asset('assets/frontend/img/bg-img/46.jpg')}})">
-                                <a href="/video_post" class="video-play"><i class="fa fa-play"></i></a>
-                            </div>
-
-                            <!-- Post Contetnt -->
-                            <div class="post-content">
-                                <div class="post-meta">
-                                    <a href="#">MAY 8, 2018</a>
-                                    <a href="/archive">lifestyle</a>
-                                </div>
-                                <a href="/video_post" class="post-title">Addiction When Gambling Becomes A Problem</a>
-                                <!-- Post Meta -->
-                                <div class="post-meta-2">
-                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 1034</a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 834</a>
-                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 234</a>
-                                </div>
-                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa officia deserunt mollit anim id est laborum. Sed ut perspiciatis lorem150</p>
-                            </div>
-                        </div>
-
-                        <!-- Single Catagory Post -->
-                        <div class="single-catagory-post d-flex flex-wrap">
-                            <!-- Thumbnail -->
-                            <div class="post-thumbnail bg-img" style="background-image: url({{ asset('assets/frontend/img/bg-img/47.jpg')}})">
-                                <a href="/video_post" class="video-play"><i class="fa fa-play"></i></a>
-                            </div>
-
-                            <!-- Post Contetnt -->
-                            <div class="post-content">
-                                <div class="post-meta">
-                                    <a href="#">MAY 8, 2018</a>
-                                    <a href="/archive">lifestyle</a>
-                                </div>
-                                <a href="/video_post" class="post-title">Take A Romantic Break In A Boutique Hotel</a>
-                                <!-- Post Meta -->
-                                <div class="post-meta-2">
-                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 1034</a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 834</a>
-                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 234</a>
-                                </div>
-                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa officia deserunt mollit anim id est laborum. Sed ut perspiciatis lorem150</p>
-                            </div>
-                        </div>
-
-                        <!-- Single Catagory Post -->
-                        <div class="single-catagory-post d-flex flex-wrap">
-                            <!-- Thumbnail -->
-                            <div class="post-thumbnail bg-img" style="background-image: url({{ asset('assets/frontend/img/bg-img/48.jpg')}})">
-                                <a href="/video_post" class="video-play"><i class="fa fa-play"></i></a>
-                            </div>
-
-                            <!-- Post Contetnt -->
-                            <div class="post-content">
-                                <div class="post-meta">
-                                    <a href="#">MAY 8, 2018</a>
-                                    <a href="/archive">lifestyle</a>
-                                </div>
-                                <a href="/video_post" class="post-title">Global Travel And Vacations Luxury Travel On A Tight Budget</a>
-                                <!-- Post Meta -->
-                                <div class="post-meta-2">
-                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 1034</a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 834</a>
-                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 234</a>
-                                </div>
-                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa officia deserunt mollit anim id est laborum. Sed ut perspiciatis lorem150</p>
-                            </div>
-                        </div>
+                        @endforeach
 
                         <!-- Pagination -->
-                        <nav>
-                            <ul class="pagination">
-                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item"><a class="page-link" href="#"><i class="ti-angle-right"></i></a></li>
-                            </ul>
-                        </nav>
+                        {{$artikel->appends(Request::all())->links()}}
 
                     </div>
                 </div>
 
                 <div class="col-12 col-md-6 col-lg-5 col-xl-4">
                     <div class="sidebar-area bg-white mb-30 box-shadow">
-                        <!-- Sidebar Widget -->
-                        <div class="single-sidebar-widget p-30">
-                            <!-- Social Followers Info -->
-                            <div class="social-followers-info">
-                                <!-- Facebook -->
-                                <a href="#" class="facebook-fans"><i class="fa fa-facebook"></i> 4,360 <span>Fans</span></a>
-                                <!-- Twitter -->
-                                <a href="#" class="twitter-followers"><i class="fa fa-twitter"></i> 3,280 <span>Followers</span></a>
-                                <!-- YouTube -->
-                                <a href="#" class="youtube-subscribers"><i class="fa fa-youtube"></i> 1250 <span>Subscribers</span></a>
-                                <!-- Google -->
-                                <a href="#" class="google-followers"><i class="fa fa-google-plus"></i> 4,230 <span>Followers</span></a>
-                            </div>
-                        </div>
 
                         <!-- Sidebar Widget -->
                         <div class="single-sidebar-widget p-30">
                             <!-- Section Title -->
                             <div class="section-heading">
-                                <h5>Categories</h5>
+                                <h5>Kategori</h5>
                             </div>
 
                             <!-- Catagory Widget -->
                             <ul class="catagory-widgets">
-                                <li><a href="#"><span><i class="fa fa-angle-double-right" aria-hidden="true"></i> Life Style</span> <span>35</span></a></li>
-                                <li><a href="#"><span><i class="fa fa-angle-double-right" aria-hidden="true"></i> Travel</span> <span>30</span></a></li>
-                                <li><a href="#"><span><i class="fa fa-angle-double-right" aria-hidden="true"></i> Foods</span> <span>13</span></a></li>
-                                <li><a href="#"><span><i class="fa fa-angle-double-right" aria-hidden="true"></i> Game</span> <span>06</span></a></li>
-                                <li><a href="#"><span><i class="fa fa-angle-double-right" aria-hidden="true"></i> Sports</span> <span>28</span></a></li>
-                                <li><a href="#"><span><i class="fa fa-angle-double-right" aria-hidden="true"></i> Football</span> <span>08</span></a></li>
-                                <li><a href="#"><span><i class="fa fa-angle-double-right" aria-hidden="true"></i> TV Show</span> <span>13</span></a></li>
+                            @foreach($kategori as $kate)
+                                @if($kate->artikel->count() == 0)
+                                @else
+                                    <li><a href="#"><span><i class="fa fa-angle-double-right" aria-hidden="true"></i> {{ $kate->nama }}</span> <span>{{ $kate->artikel->count() }}</span></a></li>
+                                @endif
+                            @endforeach
                             </ul>
                         </div>
 
                         <!-- Sidebar Widget -->
-                        <div class="single-sidebar-widget">
-                            <a href="#" class="add-img"><img src="{{ asset('assets/frontend/img/bg-img/add2.png')}}" alt=""></a>
-                        </div>
+                       
 
                         <!-- Sidebar Widget -->
-                        <div class="single-sidebar-widget p-30">
-                            <!-- Section Title -->
-                            <div class="section-heading">
-                                <h5>Hot Channels</h5>
-                            </div>
-
-                            <!-- Single YouTube Channel -->
-                            <div class="single-youtube-channel d-flex">
-                                <div class="youtube-channel-thumbnail">
-                                    <img src="{{ asset('assets/frontend/img/bg-img/14.jpg')}}" alt="">
-                                </div>
-                                <div class="youtube-channel-content">
-                                    <a href="/single_post" class="channel-title">TV Show</a>
-                                    <a href="#" class="btn subscribe-btn"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Subscribe</a>
-                                </div>
-                            </div>
-
-                            <!-- Single YouTube Channel -->
-                            <div class="single-youtube-channel d-flex">
-                                <div class="youtube-channel-thumbnail">
-                                    <img src="{{ asset('assets/frontend/img/bg-img/15.jpg')}}" alt="">
-                                </div>
-                                <div class="youtube-channel-content">
-                                    <a href="/single_post" class="channel-title">Game Channel</a>
-                                    <a href="#" class="btn subscribe-btn"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Subscribe</a>
-                                </div>
-                            </div>
-
-                            <!-- Single YouTube Channel -->
-                            <div class="single-youtube-channel d-flex">
-                                <div class="youtube-channel-thumbnail">
-                                    <img src="{{ asset('assets/frontend/img/bg-img/16.jpg')}}" alt="">
-                                </div>
-                                <div class="youtube-channel-content">
-                                    <a href="/single_post" class="channel-title">Sport Channel</a>
-                                    <a href="#" class="btn subscribe-btn"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Subscribe</a>
-                                </div>
-                            </div>
-
-                            <!-- Single YouTube Channel -->
-                            <div class="single-youtube-channel d-flex">
-                                <div class="youtube-channel-thumbnail">
-                                    <img src="{{ asset('assets/frontend/img/bg-img/17.jpg')}}" alt="">
-                                </div>
-                                <div class="youtube-channel-content">
-                                    <a href="/single_post" class="channel-title">Travel Channel</a>
-                                    <a href="#" class="btn subscribe-btn"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Subscribe</a>
-                                </div>
-                            </div>
-
-                            <!-- Single YouTube Channel -->
-                            <div class="single-youtube-channel d-flex">
-                                <div class="youtube-channel-thumbnail">
-                                    <img src="{{ asset('assets/frontend/img/bg-img/18.jpg')}}" alt="">
-                                </div>
-                                <div class="youtube-channel-content">
-                                    <a href="/single_post" class="channel-title">LifeStyle Channel</a>
-                                    <a href="#" class="btn subscribe-btn"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Subscribe</a>
-                                </div>
-                            </div>
-
-                        </div>
+                        
 
                         <!-- Sidebar Widget -->
-                        <div class="single-sidebar-widget p-30">
-                            <!-- Section Title -->
-                            <div class="section-heading">
-                                <h5>Newsletter</h5>
-                            </div>
-
-                            <div class="newsletter-form">
-                                <p>Subscribe our newsletter gor get notification about new updates, information discount, etc.</p>
-                                <form action="#" method="get">
-                                    <input type="search" name="widget-search" placeholder="Enter your email">
-                                    <button type="submit" class="btn mag-btn w-100">Subscribe</button>
-                                </form>
-                            </div>
-
-                        </div>
+                       
                     </div>
                 </div>
             </div>
@@ -478,37 +235,7 @@
                 
                 <!-- Footer Widget Area -->
                 <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="footer-widget">
-                        <h6 class="widget-title">Sport Videos</h6>
-                        <!-- Single Blog Post -->
-                        <div class="single-blog-post style-2 d-flex">
-                            <div class="post-thumbnail">
-                                <img src="{{ asset('assets/frontend/img/bg-img/12.jpg')}}" alt="">
-                            </div>
-                            <div class="post-content">
-                                <a href="/single_post" class="post-title">Take A Romantic Break In A Boutique Hotel</a>
-                                <div class="post-meta d-flex justify-content-between">
-                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</a>
-                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Single Blog Post -->
-                        <div class="single-blog-post style-2 d-flex">
-                            <div class="post-thumbnail">
-                                <img src="{{ asset('assets/frontend/img/bg-img/13.jpg')}}" alt="">
-                            </div>
-                            <div class="post-content">
-                                <a href="/single_post" class="post-title">Travel Prudently Luggage And Carry On</a>
-                                <div class="post-meta d-flex justify-content-between">
-                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</a>
-                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                   
                 </div>
                 
                 <!-- Footer Widget Area -->

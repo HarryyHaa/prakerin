@@ -58,7 +58,7 @@
                             <div class="classynav">
                                 <ul>
                                     <li class="active"><a href="/">Home</a></li>
-                                    <li><a href="/archive">Singel Post</a></li>
+                                    <li><a href="/archive">Artikel</a></li>
                                     
                                     <li><a href="/about">About</a></li>
                                     <li><a href="/contact">Contact</a></li>
