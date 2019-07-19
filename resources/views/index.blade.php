@@ -95,7 +95,7 @@
                                 <a href="#">JULY 18, 2019</a>
                                 <a href="/blog">wisata</a>
                             </div>
-                            <a href="/blog" class="post-title" data-animation="fadeInUp" data-delay="300ms">Nikmati Wiata Di Indonesia </a>
+                            <a href="/blog" class="post-title" data-animation="fadeInUp" data-delay="300ms">Nikmati Wisata Di Indonesia </a>
                             
                         </div>
                     </div>
