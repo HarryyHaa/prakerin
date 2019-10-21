@@ -7,13 +7,13 @@
     <h4>Data kategori</h4>
     <a href="{{ route('kategori.create') }}" class="btn btn-outline-primary">Tambah Data</a>
     <p></p>
-    <table class="table">
+    <table class="table table-hover table-dark">
         <thead>
             <tr>
-                    <th>No</th>
-                    <th>Nama</th>
-                    <th>Action</th>
-                  
+                    <th scope="col">No</th>
+                    <th scope="col">Nama</th>
+                    <th scope="col">Action</th>
+
             </tr>
         </thead>
         <tbody>
@@ -33,6 +33,7 @@
                         @method('delete')
 
                         <a href="{{ route('kategori.edit', ['id'=>$data->id]) }}" class="btn btn-outline-info">Edit</a>
+                        <a href="{{ route('kategori.show', ['id'=>$data->id]) }}" class="btn btn-outline-success">Show</a>
                         <button type="submit" class="btn btn-outline-danger">Hapus</button>
                     </form>
                 </td>

@@ -14,7 +14,8 @@
                                         <th scope="col">Konten</th>
                                         <th scope="col">Penulis</th></th>
                                         <th scope="col">kategori</th>
-                                        <th scope="col">Slug</th>
+                                        {{-- <th scope="col">Slug</th> --}}
+                                        <th></th>
                                         <th scope="col">Tag</th>
                                         <th colspan="2" class="text-center">Aksi</th>
                                     </tr>
@@ -27,7 +28,7 @@
                                         <td><img  src="{{ asset('assets/img/artikel/'.$data->foto)}}" width="100%"></td>
                                         <td>{!! $data->konten !!}</td>
                                         <td>{{ $data->user->name}}</td>
-                                        <td>{{ $data->kategori->nama}}</td>
+                                        {{-- <td>{{ $data->kategori->nama}}</td> --}}
                                         <td>{{ $data->slug }}</td>
                                         <td>
                                             <ol>
@@ -37,19 +38,18 @@
                                             </ol>
                                         </td>
                                         <td>
-                                            <a href="{{ route('artikel.edit',$data->id) }}"
-                                           class="btn btn-outline-info">Edit Data</a>
+                                        <a href="{{ route('artikel.edit',$data->id) }}"
+                                        class="btn btn-outline-primary">Edit Data</a>
                                         </td>
+                                        <td><a href="{{ route('artikel.show', ['id'=>$data->id]) }}" class="btn btn-outline-success">Show</a></td>
                                         <td>
-                                            <form action="{{ route('artikel.destroy',$data->id) }}" method="post">
-                                            {{csrf_field()}}
-                                                <input type="hidden" name="_method" value="DELETE">
-                                                <button class="btn btn-outline-info" type="submit">
-                                                    Hapus Data
-                                                </button>
-                                            </form>
-                                        </td>
-                                    </tr>
+                                        <form action="{{ route('artikel.destroy',$data->id) }}" method="post">
+                                        {{csrf_field()}}
+                                            <input type="hidden" name="_method" value="DELETE">
+                                            <button class="btn btn-outline-danger" type="submit"> Hapus Data </button>
+                            </form>
+                    </td>
+                </tr>
             @endforeach
         </tbody>
         </table>

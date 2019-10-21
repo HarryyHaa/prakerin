@@ -41,18 +41,16 @@
                     <input class="form-control" type="file" name="foto" id="foto">
                 </div>
                 <div class="form-group">
-                   <button type="submit" class="btn btn-outline-primary">Simpan Data</button>
-                    <a href="{{ route('artikel.index') }}" class="btn btn sm btn-danger">Back</a>
+                <button type="submit" class="btn btn-outline-primary">Simpan Data</button>
+                <a href="{{ route('artikel.index') }}" class="btn btn-outline-danger">Kembali</a>
                 </div>
                 </form>
-                        </div>
-
-
+                </div>
                 </div>
             </div>
         </div>
     </div>
-     <script>
+    <script>
       $(document).ready(function(){
           $('#select2').select2();
        });

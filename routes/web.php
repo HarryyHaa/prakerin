@@ -13,7 +13,7 @@ use App\Artikel;
 */
 
 Route::get('/', function () {
-    $artikel = Artikel::all();
+    $artikel = Artikel::paginate(5);
     return view('index', compact('artikel'));
 });
 
@@ -25,9 +25,12 @@ Route::get('about', function () {
     return view('about');
 });
 
-Route::get('video', function () {
-    return view('video_post');
+Route::get('/single_post', function () {
+    $artikel = \App\Artikel::get();
+    return view('single_post',compact('artikel'));
 });
+
+Route::get('detail/{id}', 'HomeController@detail');
 
 Route::get('submit', function () {
     return view('submit');
@@ -40,8 +43,10 @@ Route::get('login', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/post/{slug}', 'FrontendController@singel')->name('singel.post');
+Route::get('/post/{slug}', 'FrontendController@single')->name('single.post');
 Route::get('/blog', 'FrontendController@allblog')->name('all.blog');
+Route::get('/blog/category/{slug}', 'FrontendController@categoryblog')->name('category.blog');
+Route::get('/blog/tag/{tag}', 'FrontendController@tagblog')->name('tag.blog');
 
 Route::resource('/admin/kategori', 'KategoriController');
 Route::resource('/admin/artikel', 'ArtikelController');

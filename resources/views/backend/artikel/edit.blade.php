@@ -48,6 +48,7 @@
                         <button type="submit" class="btn btn-outline-info">
                             Simpan data
                         </button>
+                        <a href=" {{ route('artikel.index') }}" class="btn btn-outline-danger">Kembali</a>
                     </div>
                 </form>
                 </div>

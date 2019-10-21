@@ -9,10 +9,10 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>Mag - Video &amp; Magazine HTML Template</title>
+    <title>Artikel Wisata</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="{{ asset('assets/frontend/img/core-img/favicon.ico')}}">
+    <link rel="icon" href="{{ asset('assets/frontend/img/core-img/wisata.jpg')}}">
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="{{ asset('assets/frontend/style.css')}}">
@@ -38,7 +38,8 @@
                 <nav class="classy-navbar justify-content-between" id="magNav">
 
                     <!-- Nav brand -->
-                    <a href="/" class="nav-brand"><img src="{{ asset('assets/frontend/img/core-img/logo.png')}}" alt=""></a>
+                    <h2>Wisata Jabarr</h2>
+                    {{-- <a href="/" class="nav-brand"><img src="{{ asset('assets/frontend/img/core-img/logo.png')}}" alt=""></a> --}}
 
                     <!-- Navbar Toggler -->
                     <div class="classy-navbar-toggler">
@@ -59,8 +60,8 @@
                                 <ul>
                                     <li class="active"><a href="/">Home</a></li>
                                     <li><a href="/blog">Artikel </a></li>
-                                    
-                                   
+
+
                                 </ul>
                             </div>
                             <!-- Nav End -->
@@ -69,12 +70,15 @@
                         <div class="top-meta-data d-flex align-items-center">
                             <!-- Top Search Area -->
                             <div class="top-search-area">
-                               
+                                <form action="/" method="post">
+                                    <input type="search" name="top-search" id="topSearch" placeholder="Search and hit enter...">
+                                    <button type="submit" class="btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                </form>
                             </div>
                             <!-- Login -->
                             <a href="/login" class="login-btn"><i class="fa fa-user" aria-hidden="true"></i></a>
                             <!-- Submit Video -->
-                            
+
                         </div>
                     </div>
                 </nav>
@@ -104,9 +108,9 @@
                 <div class="col-12">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
-                            <li class="breadcrumb-item"><a href="#">Feature</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Archive by Category “TRAVEL”</li>
+                            <li class="breadcrumb-item"><a href="/"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+                            {{-- <li class="breadcrumb-item"><a href="#">Feature</a></li> --}}
+                            <li class="breadcrumb-item active" aria-current="page">Artikel</li>
                         </ol>
                     </nav>
                 </div>
@@ -126,23 +130,23 @@
                         @foreach($artikel as $blog)
                             <div class="single-catagory-post d-flex flex-wrap">
                                 <!-- Thumbnail -->
-                                <div class="post-thumbnail bg-img" style="background-image: url({{ asset('assets/img/artikel/'.$blog->foto)}})">
+                                <div class="post-thumbnail bg-img" style="background-image: url({{ asset('assets/img/artikel/'.$blog->foto)}});">
                                 </div>
 
                                 <!-- Post Contetnt -->
                                 <div class="post-content">
                                     <div class="post-meta">
-                                        <a href="#">{{ $blog->created_at->diffForHumans() }}</a>
-                                        <a href="/category/{{$blog->kategori->slug}}">{{$blog->kategori->nama}}</a>
+                                        <p>{{ $blog->created_at->diffForHumans() }}</p>
+                                        {{-- <a href="/category/{{$blog->kategori->slug}}">{{$blog->kategori->nama}}</a> --}}
                                     </div>
-                                    <a href="/video_post" class="post-title">{{ $blog->judul }}</a>
+                                    <a href="/detail/{{$blog->id}}" class="post-title">{{ $blog->judul }}</a>
                                     <!-- Post Meta -->
                                     <div class="post-meta-2">
                                         @foreach($blog->tag as $tag)
-                                            <a href="/tag/{{$tag->slug}}"><i class="fa fa-hashtag"></i> {{ $tag->nama }}</a>
+                                            <a href="/blog/tag/{{$tag->slug}}"><i class="fa fa-hashtag"></i> {{ $tag->nama }}</a>
                                         @endforeach
                                     </div>
-                                    <p>{!! str_replace('5', '50', $blog->konten) !!}</p>
+                                    <p>{!! Str::limit($blog->konten, '100', ' . . .') !!} <a href="/detail/{{ $blog->id }}"> Baca selengkapnya</a></p>
                                 </div>
                             </div>
                         @endforeach
@@ -167,21 +171,22 @@
                             <ul class="catagory-widgets">
                             @foreach($kategori as $kate)
                                 @if($kate->artikel->count() == 0)
+
                                 @else
-                                    <li><a href="#"><span><i class="fa fa-angle-double-right" aria-hidden="true"></i> {{ $kate->nama }}</span> <span>{{ $kate->artikel->count() }}</span></a></li>
+                                    <li><a href="/blog/category/{{ $kate->slug }}"><span><i class="fa fa-angle-double-right" aria-hidden="true"></i> {{ $kate->nama }}</span> <span>{{ $kate->artikel->count() }}</span></a></li>
                                 @endif
                             @endforeach
                             </ul>
                         </div>
 
                         <!-- Sidebar Widget -->
-                       
+
 
                         <!-- Sidebar Widget -->
-                        
+
 
                         <!-- Sidebar Widget -->
-                       
+
                     </div>
                 </div>
             </div>
@@ -197,64 +202,57 @@
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="footer-widget">
                         <!-- Logo -->
-                        <a href="/" class="foo-logo"><img src="{{ asset('assets/frontend/img/core-img/logo2.png')}}" alt=""></a>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <h1>Wisata Jabarr</h1>
+                        {{-- <a href="/" class="foo-logo"><img src="{{ asset('assets/frontend/img/core-img/logo2.png')}}" alt=""></a> --}}
+                        <p>Jawa Barat adalah sebuah provinsi di Indonesia. Ibu kotanya berada di Kota Bandung. Perkembangan Sejarah menunjukkan bahwa Provinsi Jawa Barat merupakan Provinsi yang pertama dibentuk di wilayah Indonesia </p>
                         <div class="footer-social-info">
-                            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                            <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-                            <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-                            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                            {{-- <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> --}}
+                            {{-- <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a> --}}
+                            {{-- <a href="#" class="instagram"><i class="fa fa-instagram"></i></a> --}}
+                            {{-- <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a> --}}
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Footer Widget Area -->
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="footer-widget">
-                        <h6 class="widget-title">Categories</h6>
-                        <nav class="footer-widget-nav">
-                            <ul>
-                                <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Life Style</a></li>
-                                <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Tech</a></li>
-                                <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Travel</a></li>
-                                <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Music</a></li>
-                                <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Foods</a></li>
-                                <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Fashion</a></li>
-                                <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Game</a></li>
-                                <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Football</a></li>
-                                <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Sports</a></li>
-                                <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> TV Show</a></li>
-                            </ul>
-                        </nav>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        {{-- <div class="footer-widget">
+                            <h6 class="widget-title">Categories</h6>
+                            <nav class="footer-widget-nav">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Life Style</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Tech</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Travel</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Music</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Foods</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Fashion</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Game</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Football</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Sports</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> TV Show</a></li>
+                                </ul>
+                            </nav>
+                        </div> --}}
                     </div>
-                </div>
-                
+
                 <!-- Footer Widget Area -->
                 <div class="col-12 col-sm-6 col-lg-3">
-                   
+
                 </div>
-                
+
                 <!-- Footer Widget Area -->
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="footer-widget">
-                        <h6 class="widget-title">Channels</h6>
+                        <h6 class="widget-title">Kategori</h6>
                         <ul class="footer-tags">
-                            <li><a href="#">Travel</a></li>
-                            <li><a href="#">Fashionista</a></li>
-                            <li><a href="#">Music</a></li>
-                            <li><a href="#">DESIGN</a></li>
-                            <li><a href="#">NEWS</a></li>
-                            <li><a href="#">TRENDING</a></li>
-                            <li><a href="#">VIDEO</a></li>
-                            <li><a href="#">Game</a></li>
-                            <li><a href="#">Sports</a></li>
-                            <li><a href="#">Lifestyle</a></li>
-                            <li><a href="#">Foods</a></li>
-                            <li><a href="#">TV Show</a></li>
-                            <li><a href="#">Twitter Video</a></li>
-                            <li><a href="#">Playing</a></li>
-                            <li><a href="#">clips</a></li>
+                            @foreach($kategori as $kate)
+                                @if($kate->artikel->count() == 0)
+
+                                @else
+                                    <li><a href="/blog/category/{{ $kate->slug }}"><span><i class="fa fa-angle-double-right" aria-hidden="true"></i> {{ $kate->nama }}</span> <span>{{ $kate->artikel->count() }}</span></a></li>
+                                @endif
+                            @endforeach
                         </ul>
                     </div>
                 </div>
@@ -268,16 +266,16 @@
                     <!-- Copywrite Text -->
                     <div class="col-12 col-sm-6">
                         <p class="copywrite-text"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i {{--class="fa fa-heart-o"--}} aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                     </div>
                     <div class="col-12 col-sm-6">
                         <nav class="footer-nav">
                             <ul>
-                                <li><a href="#">Home</a></li>
+                                {{-- <li><a href="#">Home</a></li>
                                 <li><a href="#">Privacy</a></li>
                                 <li><a href="#">Advertisement</a></li>
-                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Contact Us</a></li> --}}
                             </ul>
                         </nav>
                     </div>

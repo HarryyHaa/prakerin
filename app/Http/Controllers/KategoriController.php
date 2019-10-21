@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Kategori;
-use Auth;
 use Session;
 
 class KategoriController extends Controller
@@ -45,7 +44,7 @@ class KategoriController extends Controller
     {
         $kategori = new Kategori;
         $kategori->nama = $request->get('nama');
-        $kategori->slug = $request->get('nama');
+        $kategori->slug = str_slug($request->nama);
         $kategori->save();
         Session::flash("flash_notification",
         [
@@ -63,7 +62,8 @@ class KategoriController extends Controller
      */
     public function show($id)
     {
-        // 
+        $kategori = Kategori::findOrfail($id);
+        return view('backend.kategori.show', compact('kategori'));
     }
 
     /**
@@ -74,8 +74,8 @@ class KategoriController extends Controller
      */
     public function edit($id)
     {
-        $kategori = kategori::findOrFail($id);
-        return view('kategori.edit', compact('kategori'));
+        $kategori = Kategori::findOrFail($id);
+        return view('backend.kategori.edit', compact('kategori'));
     }
 
     /**
@@ -89,8 +89,7 @@ class KategoriController extends Controller
     {
         $kategori = Kategori::findOrFail($id);
         $kategori->nama = $request->get('nama');
-        $kategori->alamat = $request->get('alamat');
-        $kategori->no_tlp = $request->get('no_tlp');
+        $kategori->slug = str_slug($request->nama);
         $kategori->save();
         Session::flash("flash_notification",[
             "level" => "success",

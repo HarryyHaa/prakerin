@@ -20,8 +20,8 @@ class FrontendController extends Controller
     {
         $artikel = Artikel::with('kategori', 'tag', 'user')->latest()->paginate(5);
         $kategori = Kategori::all();
-        
-        $cari = $request->cari;
+
+        $cari = $request->get('cari');
 
         if ($cari) {
             $artikel = Artikel::where('judul', 'LIKE', "%$cari%")->paginate(4);
@@ -41,16 +41,37 @@ class FrontendController extends Controller
         return view('frontend.mag.index', compact('artikel', 'cat'));
     }
 
-    public function blogtag(Tag $tag)
+    public function tagblog(Request $request, Tag $tag)
     {
-        $artikel = $tag->artikel()->latest()->paginate(5);
-        return view('frontend.mag.index', compact('artikel', 'tag'));
+        $artikel = $tag->artikel()->with('kategori', 'tag', 'user')->latest()->paginate(5);
+        $kategori = Kategori::all();
+
+        $cari = $request->get('cari');
+
+        if ($cari) {
+            $artikel = Artikel::where('judul', 'LIKE', "%$cari%")->paginate(4);
+        }
+        return view('archive', compact('artikel', 'kategori'));
+        // return view('frontend.mag.index', compact('artikel', 'tag'));
     }
 
-    public function singelpost($slug)
+    public function singel_post($slug)
     {
         $artikel = Artikel::where('slug', $slug)->get();
         return view('frontend.mag.singel', compact('artikel'));
     }
 
+    public function categoryblog(Request $request, Kategori $slug)
+    {
+        // $artikel = Artikel::with('kategori', 'tag', 'user')->where('')->latest()->paginate(5);
+        $artikel = $slug->artikel()->with('kategori', 'tag', 'user')->latest()->paginate(5);
+        $kategori = Kategori::all();
+
+        $cari = $request->get('cari');
+
+        if ($cari) {
+            $artikel = Artikel::where('judul', 'LIKE', "%$cari%")->paginate(4);
+        }
+        return view('archive', compact('artikel', 'kategori'));
+    }
 }

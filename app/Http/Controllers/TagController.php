@@ -11,7 +11,7 @@ class TagController extends Controller
 {
     // public function __construct()
     // {
-    //     $this->middleware('auth');  
+    //     $this->middleware('auth');
     // }
     /**
      * Display a listing of the resource.
@@ -27,7 +27,7 @@ class TagController extends Controller
     public function index()
     {
         $tag = Tag::all();
-        return view('backend.tag.index', compact('tag'));  
+        return view('backend.tag.index', compact('tag'));
     }
 
     /**
@@ -64,7 +64,8 @@ class TagController extends Controller
      */
     public function show($id)
     {
-        //
+        $tag = Tag::findOrfail($id);
+        return view('backend.tag.show', compact('tag'));
     }
 
     /**
@@ -93,7 +94,7 @@ class TagController extends Controller
         $tag->slug = str_slug($request->nama);
         $tag->save();
         return redirect()->route('tag.index');
-    
+
     }
 
     /**

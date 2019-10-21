@@ -38,7 +38,7 @@ class ArtikelController extends Controller
         $tag = Tag::all();
         $kategori = Kategori::all();
         return view('backend.artikel.create', compact('tag', 'kategori'));
-    
+
     }
 
     /**
@@ -77,7 +77,12 @@ class ArtikelController extends Controller
      */
     public function show($id)
     {
-        //
+        $artikel = Artikel::findOrfail($id);
+        $tag = Tag::all();
+        $kategori = Kategori::all();
+
+        $selectTag = $artikel->tag->pluck('id')->toArray();
+        return view('backend.artikel.show', compact('artikel', 'selectTag', 'tag', 'kategori'));
     }
 
     /**
@@ -156,6 +161,6 @@ class ArtikelController extends Controller
         $artikel->delete();
 
         return redirect()->route('artikel.index');
-    
+
     }
 }

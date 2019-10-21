@@ -15,7 +15,7 @@ use Illuminate\Http\Request;
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
-    
+
 });
 
 // Route::resource('/contoh', 'SiswaController');
@@ -23,6 +23,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::group (['middlewere' => 'cors'], function () {
     Route::resource('/kategori', 'Api\KategoriController');
-    Route::resource('/contoh', 'SiswaController');
-    Route::resource('/skul', 'SekolahController');
+    Route::resource('/contoh', 'Api\SiswaController');
+    Route::resource('/skul', 'Api\SekolahController');
 });
