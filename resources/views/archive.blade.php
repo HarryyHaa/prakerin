@@ -12,7 +12,7 @@
     <title>Artikel Wisata</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="{{ asset('assets/frontend/img/core-img/wisata.jpg')}}">
+    <link rel="icon" href="{{ asset('assets/frontend/img/core-img/logo3.png')}}">
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="{{ asset('assets/frontend/style.css')}}">
@@ -38,8 +38,8 @@
                 <nav class="classy-navbar justify-content-between" id="magNav">
 
                     <!-- Nav brand -->
-                    <h2>Wisata Jabarr</h2>
-                    {{-- <a href="/" class="nav-brand"><img src="{{ asset('assets/frontend/img/core-img/logo.png')}}" alt=""></a> --}}
+                    {{-- <h2>Wisata Jabarr</h2> --}}
+                    <a href="/" class="nav-brand"><img src="{{ asset('assets/frontend/img/core-img/logoo2.jpeg')}}" width="180px" height="200px"></a>
 
                     <!-- Navbar Toggler -->
                     <div class="classy-navbar-toggler">
@@ -60,8 +60,6 @@
                                 <ul>
                                     <li class="active"><a href="/">Home</a></li>
                                     <li><a href="/blog">Artikel </a></li>
-
-
                                 </ul>
                             </div>
                             <!-- Nav End -->
@@ -70,15 +68,14 @@
                         <div class="top-meta-data d-flex align-items-center">
                             <!-- Top Search Area -->
                             <div class="top-search-area">
-                                <form action="/" method="post">
-                                    <input type="search" name="top-search" id="topSearch" placeholder="Search and hit enter...">
+                                <form action="{{action('FrontendController@allblog')}}">
+                                    <input type="search" name="cari" id="topSearch" placeholder="Search and hit enter...">
                                     <button type="submit" class="btn"><i class="fa fa-search" aria-hidden="true"></i></button>
                                 </form>
                             </div>
                             <!-- Login -->
                             <a href="/login" class="login-btn"><i class="fa fa-user" aria-hidden="true"></i></a>
                             <!-- Submit Video -->
-
                         </div>
                     </div>
                 </nav>
@@ -202,8 +199,8 @@
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="footer-widget">
                         <!-- Logo -->
-                        <h1>Wisata Jabarr</h1>
-                        {{-- <a href="/" class="foo-logo"><img src="{{ asset('assets/frontend/img/core-img/logo2.png')}}" alt=""></a> --}}
+                        {{-- <h1>Wisata Jabarr</h1> --}}
+                        <a href="/" class="foo-logo"><img src="{{ asset('assets/frontend/img/core-img/logoo2.png')}}" alt=""></a>
                         <p>Jawa Barat adalah sebuah provinsi di Indonesia. Ibu kotanya berada di Kota Bandung. Perkembangan Sejarah menunjukkan bahwa Provinsi Jawa Barat merupakan Provinsi yang pertama dibentuk di wilayah Indonesia </p>
                         <div class="footer-social-info">
                             {{-- <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> --}}

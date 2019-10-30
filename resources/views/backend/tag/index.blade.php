@@ -5,13 +5,13 @@
         <h4>Data kategori</h4>
         <a href="{{ route ('tag.create') }}" class="btn btn-outline-info">Tambah Data</a>
         <p></p>
-       <table class ="table table-hover table-dark">
-            <thead>
+       <table class ="table table-hover table-bordered ">
+        <thead class="thead-dark">
                 <tr>
                                         <th scope="col">No</th>
                                         <th scope="col">Nama Tag</th>
                                         <th scope="col">Slug</th>
-                                        <th colspan="2" class="text-center">Aksi</th>
+                                        <th colspan="3" class="text-center">Aksi</th>
                                     </tr>
                                     </thead>
                                     @php $no = 1; @endphp

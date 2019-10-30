@@ -12,7 +12,7 @@
     <title>Wisata Jawa Barat</title>
     {{-- &amp; --}}
     <!-- Favicon -->
-    <link rel="icon" href="{{ asset ('assets/frontend/img/core-img/wisata.jpg')}}">
+    <link rel="icon" href="{{ asset ('assets/frontend/img/core-img/logo3.png')}}">
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="{{ asset ('assets/frontend/style.css')}}">
@@ -38,8 +38,8 @@
                 <nav class="classy-navbar justify-content-between" id="magNav">
 
                     <!-- Nav brand -->
-                    <h2>Wisata Jabarr</h2>
-                    {{-- <a href="/" class="nav-brand"><img src="{{ asset('assets/frontend/img/core-img/logo.png')}}"></a> --}}
+                    {{-- <h2>Wisata Jabarr</h2> --}}
+                    <a href="/" class="nav-brand"><img src="{{ asset('assets/frontend/img/core-img/logoo2.jpeg')}}" width="180px" height="0px"></a>
 
                     <!-- Navbar Toggler -->
                     <div class="classy-navbar-toggler">
@@ -69,7 +69,7 @@
                         <div class="top-meta-data d-flex align-items-center">
                             <!-- Top Search Area -->
                             <div class="top-search-area">
-                                <form action="{{action('FrontendController@allblog')}}" method="post">
+                                <form action="{{action('FrontendController@allblog')}}">
                                     <input type="search" name="cari" id="topSearch" placeholder="Search and hit enter...">
                                     <button type="submit" class="btn"><i class="fa fa-search" aria-hidden="true"> </i></button>
                                 </form>
@@ -96,8 +96,8 @@
                         <!-- Post Contetnt -->
                         <div class="post-content text-center">
                             <div class="post-meta" data-animation="fadeInUp" data-delay="100ms">
-                                <a href="#">JULY 18, 2019</a>
-                                <a href="/blog">wisata</a>
+                                {{-- <a href="#">JULY 18, 2019</a>
+                                <a href="/blog">wisata</a> --}}
                             </div>
                             <a href="/blog" class="post-title" data-animation="fadeInUp" data-delay="300ms">Wisata Jawa Barat </a>
 
@@ -115,8 +115,8 @@
                         <!-- Post Contetnt -->
                         <div class="post-content text-center">
                             <div class="post-meta" data-animation="fadeInUp" data-delay="100ms">
-                                <a href="#">July 18, 2018</a>
-                                <a href="/blog">wisata</a>
+                                {{-- <a href="#">July 18, 2018</a>
+                                <a href="/blog">wisata</a> --}}
                             </div>
                             <a href="/blog" class="post-title" data-animation="fadeInUp" data-delay="300ms">Carilah Tempat Tempat Wisata Yang Anda Inginkan </a>
 
@@ -134,8 +134,8 @@
                         <!-- Post Contetnt -->
                         <div class="post-content text-center">
                             <div class="post-meta" data-animation="fadeInUp" data-delay="100ms">
-                                <a href="">July 18, 2018</a>
-                                <a href="/blog">wisata</a>
+                                {{-- <a href="">July 18, 2018</a>
+                                <a href="/blog">wisata</a> --}}
                             </div>
                             <a href="/blog" class="post-title" data-animation="fadeInUp" data-delay="300ms">Banyak Tempat Wisata Dan Budaya DiJawa Barat</a>
 
@@ -158,14 +158,14 @@
             <div class="single-sidebar-widget p-30">
                 <!-- Section Title -->
                 <div class="section-heading">
-                    <h5>Wisata Populer</h5>
+                    <h5>WisataPopuler</h5> <br>
                     @php
                         $trandings = \App\Artikel::orderBy('views', 'DESC')->get()->take(5);
                     @endphp
                     @foreach ($trandings as $data)
                         <div class="single-blog-post d-flex">
                             <div class="post-thumbnail">
-                                <img src="/assets" alt="">
+                                <img src="{{ asset('assets/img/artikel/'.$data->foto)}}">
                             </div>
                             <div class="post-content">
                                 <a href="/detail/{{$data->id}}" class="post-title">{{ $data->judul }}</a>
@@ -289,8 +289,8 @@
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="footer-widget">
                         <!-- Logo -->
-                        <h1>Wisata Jabarr</h1>
-                        {{-- <a href="/" class="foo-logo"><img src="{{ asset('assets/frontend/img/core-img/logo.png')}}"></a> --}}
+                        {{-- <h1>Wisata Jabarr</h1> --}}
+                        <a href="/" class="foo-logo"><img src="{{ asset('assets/frontend/img/core-img/logoo2.png')}}"></a>
                         <p>Jawa Barat adalah sebuah provinsi di Indonesia. Ibu kotanya berada di Kota Bandung. Perkembangan Sejarah menunjukkan bahwa Provinsi Jawa Barat merupakan Provinsi yang pertama dibentuk di wilayah Indonesia </p>
                         <div class="footer-social-info">
                             {{-- <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
@@ -348,9 +348,26 @@
                 <!-- Footer Widget Area -->
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="footer-widget">
-                        <h6 class="widget-title">Channels</h6>
+                        <h6 class="widget-title">Populer</h6>
                         <ul class="footer-tags">
-
+                            @php
+                            $trandings = \App\Artikel::orderBy('views', 'DESC')->get()->take(3);
+                        @endphp
+                        @foreach ($trandings as $data)
+                            <div class="single-blog-post d-flex">
+                                <div class="post-thumbnail">
+                                    <img src="{{ asset('assets/img/artikel/'.$data->foto)}}">
+                                </div>
+                                <div class="post-content">
+                                    <a href="/detail/{{$data->id}}" class="post-title">{{ $data->judul }}</a>
+                                    <div class="post-meta d-flex justify-content-between">
+                                        <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> {{ $data->views }} Orang</a>
+                                        {{-- <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</a>
+                                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a> --}}
+                                    </div>
+                                </div>
+                            </div>
+                        @endforeach
                         </ul>
                     </div>
                 </div>

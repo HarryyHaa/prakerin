@@ -204,7 +204,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Footer Widget Area -->
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="footer-widget">
@@ -225,7 +225,7 @@
                         </nav>
                     </div>
                 </div>
-                
+
                 <!-- Footer Widget Area -->
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="footer-widget">
@@ -260,7 +260,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Footer Widget Area -->
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="footer-widget">

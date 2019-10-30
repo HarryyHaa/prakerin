@@ -20,7 +20,7 @@
                     <textarea name="konten" id="" class="form-control ckeditor" cols="30" rows="10"></textarea>
                 </div>
                 <div class="form-group">
-              <label for="">Nama kategori</label>
+              <label for="">Nama Kota</label>
                 <select name="kategori_id" class="form-control">
                   @foreach($kategori as $data)
                     <option value="{{ $data->id }}">{{ $data->nama }}</option>

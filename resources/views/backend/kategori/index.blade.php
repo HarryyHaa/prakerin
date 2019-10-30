@@ -7,8 +7,8 @@
     <h4>Data kategori</h4>
     <a href="{{ route('kategori.create') }}" class="btn btn-outline-primary">Tambah Data</a>
     <p></p>
-    <table class="table table-hover table-dark">
-        <thead>
+    <table class="table table-hover table-bordered">
+        <thead class="thead-dark">
             <tr>
                     <th scope="col">No</th>
                     <th scope="col">Nama</th>
