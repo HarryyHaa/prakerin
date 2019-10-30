@@ -30,6 +30,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
+    @yield('css')
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
@@ -46,6 +47,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
+                        @if(Auth::check())
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('artikel.index') }}">{{ __('Artikel') }}</a>
                         </li>
@@ -55,6 +57,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('tag.index') }}">{{ __('Tag') }}</a>
                         </li>
+                        @endif
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -100,5 +103,6 @@
     </div>
 
     <script src="{{asset('js/kategori.js')}}"> </script>
+    @stack('js')
 </body>
 </html>

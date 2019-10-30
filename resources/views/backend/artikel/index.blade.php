@@ -19,7 +19,9 @@
                                         <th colspan="3" class="text-center">Aksi</th>
                                     </tr>
                                     </thead>
-                                    @php $no = 1; @endphp
+                                    @php
+                                    use Illuminate\Support\Str;
+                                    $no = 1; @endphp
                                     @foreach($artikel as $data)
                                     <tr>
                                         <td>{{ $no++ }}</td>
@@ -28,7 +30,7 @@
                                         <td>{!! $data->konten !!}</td>
                                         <td>{{ $data->user->name}}</td>
                                         {{-- <td>{{ $data->kategori->nama}}</td> --}}
-                                        <td>{{ $data->slug }}</td>
+                                        <td>{{ $data->kategori->nama }}</td>
                                         <td>
                                             <ol>
                                                 @foreach($data->tag as $isi)

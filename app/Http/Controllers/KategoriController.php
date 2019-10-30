@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Kategori;
 use Session;
+use Yajra\DataTables\DataTables;
 
 class KategoriController extends Controller
 {
@@ -19,9 +20,23 @@ class KategoriController extends Controller
         $this->middleware('auth');
     }
 
-    public function index()
+    public function index(Request $request)
     {
-        $kategori = Kategori::all();
+        if($request->ajax()) {
+            $kategori = Kategori::get();
+            return Datatables::of($kategori)
+                ->addIndexColumn()
+                ->addColumn('action', function ($row) {
+                    $btn = '';
+
+                    $btn = '<a href="/admin/kategori/'.$row->id.'/edit" class="btn btn-outline-info">Edit</a>';
+                    $btn = $btn . ' <a href="/admin/kategori/'.$row->id.'" class="btn btn-outline-success">Show</a>';
+                    $btn = $btn .' <a href="#" class="btn btn-outline-danger" id="hapus-data" data-id="'.$row->id.'">Hapus</a>';
+                    return $btn;
+                })
+                ->rawColumns(['action'])
+                ->make(true);
+        }
         return view('backend.kategori.index', compact('kategori'));
     }
 
